@@ -7,19 +7,16 @@
     tools:context=".Anfitrion">
 
 
-    <ListView
-        android:layout_width="match_parent"
-        android:layout_height="125dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="130dp" />
-
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/ringbell"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:alpha="0.6"
         android:scaleType="centerCrop"
-        android:alpha="0.6"/>
+        android:src="@drawable/ringbell"
+        app:srcCompat="@drawable/ringbell" />
+
     <ImageView
         android:id="@+id/Logo"
         android:layout_alignParentTop="true"
@@ -99,5 +96,42 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/InfoUsuario"
         android:text="Editar perfil" />
+
+    <ScrollView
+        android:layout_width="300dp"
+        android:layout_height="141dp"
+        android:layout_alignStart="@+id/Logo"
+        android:layout_below="@+id/button3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lugar1" />
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lugar2" />
+
+            <Button
+                android:id="@+id/button13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lugar3" />
+
+            <Button
+                android:id="@+id/button14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Button" />
+        </LinearLayout>
+    </ScrollView>
 
 </RelativeLayout>
