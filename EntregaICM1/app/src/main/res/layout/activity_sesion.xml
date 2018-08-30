@@ -68,7 +68,7 @@
         android:id="@+id/BarraBotones"
         android:layout_width="350dp"
         android:layout_height="80dp"
-        android:layout_below="@+id/InfoUsuario"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="#B3E5FC">
