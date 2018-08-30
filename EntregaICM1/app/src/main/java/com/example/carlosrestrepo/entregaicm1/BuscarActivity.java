@@ -115,7 +115,7 @@ public class BuscarActivity extends AppCompatActivity {
     public void botonBuscarLugares(){
         AlertDialog.Builder dialogo = new AlertDialog.Builder(this);
 
-        dialogo.setTitle("Seguro que quiere Efectuar los Cambios");
+        dialogo.setTitle("?Seguro que quiere realizar la busqueda con estos datos?");
         dialogo.setMessage("Continuar");
         dialogo.setPositiveButton("Sí", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
