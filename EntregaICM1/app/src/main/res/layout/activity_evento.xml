@@ -21,8 +21,9 @@
         android:layout_width="199dp"
         android:layout_height="44dp"
 
-        android:layout_above="@+id/comentar"
+        android:layout_below="@+id/infoevento"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
         android:background="@drawable/botonplano"
         android:text="Seguir" />
 
@@ -31,9 +32,8 @@
         android:layout_width="199dp"
         android:layout_height="44dp"
 
-        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/Seguir"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="38dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/botonplano"
         android:text="Ir" />
@@ -49,6 +49,7 @@
         android:textSize="30sp" />
 
     <LinearLayout
+        android:id="@+id/imaglugeven"
         android:layout_width="328dp"
         android:layout_height="144dp"
         android:layout_below="@+id/textView"
@@ -80,11 +81,12 @@
     </LinearLayout>
 
     <ScrollView
+        android:id="@+id/infoevento"
         android:layout_width="327dp"
         android:layout_height="139dp"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/imaglugeven"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="161dp">
+        android:layout_marginTop="-5dp">
 
         <LinearLayout
             android:layout_width="match_parent"
