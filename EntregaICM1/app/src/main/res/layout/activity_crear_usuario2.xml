@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CrearUsuario2Activity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ringbell"
+        android:scaleType="centerCrop"
+        android:alpha="0.6"/>
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/logo"
+        />
+
+    <RelativeLayout
+        android:id="@+id/InfoUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/Logo"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:id="@+id/FotoUsuario"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/foto_usuario"
+            android:scaleType="centerCrop"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@+id/NombreUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/FotoUsuario"
+            android:layout_centerHorizontal="true"
+            android:text="NOMBRE APELLIDO" />
+        <TextView
+            android:id="@+id/PaisCiudad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/NombreUsuario"
+            android:layout_centerHorizontal="true"
+            android:text="Pais,Ciudad"
+            android:textSize="15dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/InfoContinuar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/InfoUsuario"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/Signo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="30dp"
+            android:gravity="center"
+            android:text="+" />
+
+        <EditText
+            android:id="@+id/Telefono"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:layout_toRightOf="@+id/Signo"
+            android:hint="0000000000"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/EnviarCodigo"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/Signo"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/botonplano"
+            android:text="Enviar Codigo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/EnviarCodigo">
+        <TextView
+            android:id="@+id/TextoCodigo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="CODIGO" />
+
+        <EditText
+            android:id="@+id/CodigoActivacion"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="30dp"
+            android:hint="- - - - - -"
+            android:gravity="center"
+            android:inputType="number" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/Siguiente"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:drawableTop="@drawable/flecha_siguiente"
+        />
+    <Button
+        android:id="@+id/Atras"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:drawableTop="@drawable/flecha_atras"
+        />
+
+
+</RelativeLayout>

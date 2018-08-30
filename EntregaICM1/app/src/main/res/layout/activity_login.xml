@@ -1,0 +1,88 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ringbell"
+        android:scaleType="centerCrop"
+        android:alpha="0.7"/>
+
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/logo"
+        />
+    <EditText
+        android:id="@+id/TextoUsuario"
+        android:layout_centerInParent="true"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:hint="Usuario"/>
+    <EditText
+        android:id="@+id/TextoContraseña"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:inputType="textPassword"
+        android:layout_below="@+id/TextoUsuario"
+        android:hint="Contraseña"/>
+
+    <RelativeLayout
+        android:id="@+id/BotonesLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp">
+
+
+        <Button
+            android:id="@+id/IniciarSesion"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignLeft="@+id/CrearUsuario"
+            android:layout_margin="20dp"
+            android:background="@drawable/botonplano"
+            android:text="Iniciar Sesion"
+
+            />
+
+    <Button
+        android:id="@+id/CrearUsuario"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/botonplano"
+        android:layout_margin="20dp"
+        android:text="Crear Usuario"
+
+        />
+     <Button
+         android:id="@+id/OlvidoContrasena"
+         android:layout_width="150dp"
+         android:layout_height="40dp"
+         android:layout_below="@+id/CrearUsuario"
+         android:background="@drawable/botonplano"
+
+         android:layout_centerHorizontal="true"
+         android:text="Olvido Contaseña"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
