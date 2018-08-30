@@ -3,6 +3,7 @@ package com.example.carlosrestrepo.entregaicm1;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageButton;
 
 public class ComprobarCalendario extends AppCompatActivity {
@@ -14,6 +15,14 @@ public class ComprobarCalendario extends AppCompatActivity {
         setContentView(R.layout.activity_comprobar_calendario);
 
         volver = (ImageButton) findViewById(R.id.imageButton);
+        volver.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                volver();
+
+            }
+        });
     }
 
     public void volver(){

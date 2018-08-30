@@ -3,6 +3,7 @@ package com.example.carlosrestrepo.entregaicm1;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ListView;
 
@@ -18,12 +19,44 @@ public class Anfitrion extends AppCompatActivity {
         setContentView(R.layout.activity_anfitrion);
 
         editar = (Button) findViewById(R.id.button3);
+        editar.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                editar();
+
+            }
+        });
 
         agregar = (Button) findViewById(R.id.button4);
+        agregar.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                agregar();
+
+            }
+        });
 
         logout = (Button) findViewById(R.id.button2);
+        logout.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                logout();
+
+            }
+        });
 
         lugares = (ListView) findViewById(R.id._dynamic);
+        lugares.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                lugares();
+
+            }
+        });
     }
 
     public void editar(){
