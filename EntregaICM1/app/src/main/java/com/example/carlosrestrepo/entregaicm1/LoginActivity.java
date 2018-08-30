@@ -38,11 +38,12 @@ public class LoginActivity extends AppCompatActivity {
         });
 
         IniciarSesionAnfitrion = (Button) findViewById(R.id.iniciarSesionAnfitrion) ;
+
         IniciarSesionAnfitrion.setOnClickListener(new View.OnClickListener() {
-
             @Override
-            public void onClick(View view) {IniciarSesionAnfitrion();
-
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(),Anfitrion.class);
+                startActivity(intent);
             }
         });
 
@@ -53,10 +54,7 @@ public class LoginActivity extends AppCompatActivity {
         startActivity(Crear);
     }
 
-    public void IniciarSesionAnfitrion(){
-        Intent Crear = new Intent(this, Anfitrion.class);
-        startActivity(Crear);
-    }
+
 
     public void IniciarSesion(){
         Intent Crear = new Intent(this, SesionActivity.class);
