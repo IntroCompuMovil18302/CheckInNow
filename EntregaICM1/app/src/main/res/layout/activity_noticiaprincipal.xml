@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Eventopricipal">
+    tools:context=".Noticiaprincipal">
 
     <ImageView
         android:layout_width="match_parent"
@@ -26,25 +26,16 @@
 
 
     <Button
-        android:id="@+id/filtrar"
-        android:layout_width="146dp"
+        android:id="@+id/filtrarnot"
+        android:layout_width="199dp"
         android:layout_height="44dp"
 
-        android:layout_alignEnd="@+id/buscarnot"
         android:layout_below="@+id/scrollnoticias"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="0dp"
+        android:layout_marginTop="-10dp"
         android:background="@drawable/botonplano"
         android:text="Filtrar" />
-
-    <Button
-        android:id="@+id/cercaMio3"
-        android:layout_width="146dp"
-        android:layout_height="44dp"
-
-        android:layout_alignStart="@+id/buscarcamponot"
-        android:layout_below="@+id/scrollnoticias"
-        android:layout_marginTop="0dp"
-        android:background="@drawable/botonplano"
-        android:text="Cerca mio" />
 
     <Button
         android:id="@+id/buscarnot"
@@ -90,10 +81,10 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/buttonnotnot"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/eventos" />
+                android:background="@drawable/noticias" />
         </LinearLayout>
     </ScrollView>
 
@@ -104,7 +95,7 @@
         android:layout_below="@+id/Logo"
         android:layout_centerHorizontal="true"
         android:layout_margin="5dp"
-        android:text="Eventos"
+        android:text="Noticias"
         android:textSize="30sp" />
 
 </RelativeLayout>

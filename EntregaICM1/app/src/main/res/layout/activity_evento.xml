@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CalificacionActivity">
+    tools:context=".Evento">
 
     <ImageView
         android:layout_width="match_parent"
@@ -21,13 +21,13 @@
         android:layout_width="199dp"
         android:layout_height="44dp"
 
-        android:layout_above="@+id/Ir"
+        android:layout_above="@+id/comentar"
         android:layout_centerHorizontal="true"
         android:background="@drawable/botonplano"
         android:text="Seguir" />
 
     <Button
-        android:id="@+id/Ir"
+        android:id="@+id/comentar"
         android:layout_width="199dp"
         android:layout_height="44dp"
 

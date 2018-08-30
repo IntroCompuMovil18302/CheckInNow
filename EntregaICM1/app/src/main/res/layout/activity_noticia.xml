@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Noticia">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:alpha="0.6"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ringbell" />
+
+
+    <Button
+        android:id="@+id/Me gusta"
+        android:layout_width="78dp"
+        android:layout_height="33dp"
+
+        android:layout_alignStart="@+id/scrollimagubic"
+        android:layout_below="@+id/scrollnoticia"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/botonplano"
+        android:text="Me Gusta" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Mis sueños"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:id="@+id/scrollimagubic"
+        android:layout_width="328dp"
+        android:layout_height="144dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/lugarpaisaje" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/mapas" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollnoticia"
+        android:layout_width="327dp"
+        android:layout_height="121dp"
+        android:layout_below="@+id/scrollimagubic"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=" Viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro. Todas estas borrascas que nos suceden son señales de que presto ha de serenar el tiempo y han de sucedernos bien las cosas"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Me gusta"
+        android:layout_marginLeft="20dp"
+        android:layout_toEndOf="@+id/Me gusta"
+        android:text="15 me gusta" />
+
+    <LinearLayout
+        android:id="@+id/fotocomentboto"
+        android:layout_width="323dp"
+        android:layout_height="53dp"
+        android:layout_below="@+id/Me gusta"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/foto_usuario" />
+
+        <EditText
+            android:id="@+id/comentario"
+            android:layout_width="232dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Comentar" />
+
+        <Button
+            android:id="@+id/comentar"
+            android:layout_width="48dp"
+            android:layout_height="44dp"
+
+            android:layout_alignStart="@+id/Me gusta"
+            android:layout_below="@+id/Me gusta"
+            android:layout_marginLeft="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/flecha_siguiente" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollcomentarios"
+        android:layout_width="323dp"
+        android:layout_height="match_parent"
+        android:layout_alignStart="@+id/fotocomentboto"
+        android:layout_below="@+id/fotocomentboto">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="20dp"
+                    android:layout_height="34dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/foto_usuario" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="241dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:text="Una habitación normal, aunque muy pequeña, tenía el aspecto habitual." />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="20dp"
+                    android:layout_height="34dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/foto_usuario" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="245dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:text="Reina en mi espíritu una alegría admirable, muy parecida a las dulces alboradas de la primavera, de que gozo aquí con delicia. " />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="20dp"
+                    android:layout_height="34dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/foto_usuario" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="245dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:text=" Gregorio Samsa se despertó convertido en un monstruoso insecto." />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

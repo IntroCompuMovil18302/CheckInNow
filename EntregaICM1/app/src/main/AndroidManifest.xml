@@ -29,7 +29,10 @@
         <activity android:name=".CalificacionActivity" />
         <activity android:name=".Eventopricipal" />
         <activity android:name=".Evento" />
-        <activity android:name=".Filtrarevento"></activity>
+        <activity android:name=".Filtrarevento" />
+        <activity android:name=".Noticiaprincipal" />
+        <activity android:name=".Noticia" />
+        <activity android:name=".Filtrarnoticias"></activity>
     </application>
 
 </manifest>
