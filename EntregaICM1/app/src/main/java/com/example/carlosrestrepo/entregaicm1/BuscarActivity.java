@@ -137,5 +137,7 @@ public class BuscarActivity extends AppCompatActivity {
 
     public void onBackPressed() {
         // Do Here what ever you want do on back press;
+        Intent ir = new Intent(this, SesionActivity.class);
+        startActivity(ir);
     }
 }
