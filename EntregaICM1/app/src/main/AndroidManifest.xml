@@ -36,7 +36,9 @@
         <activity android:name=".Anfitrion" />
         <activity android:name=".EditarPerfilAnfitrion" />
         <activity android:name=".ModificarLugar" />
-        <activity android:name=".VerLugar"></activity>
+        <activity android:name=".VerLugar" />
+        <activity android:name=".ComprobarCalendario" />
+        <activity android:name=".AgregarAlojamiento"></activity>
     </application>
 
 </manifest>
