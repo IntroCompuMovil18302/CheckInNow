@@ -26,7 +26,10 @@
         <activity android:name=".BuscarActivity" />
         <activity android:name=".Buscar2Activity" />
         <activity android:name=".ReservasActivity" />
-        <activity android:name=".CalificacionActivity"></activity>
+        <activity android:name=".CalificacionActivity" />
+        <activity android:name=".Eventopricipal" />
+        <activity android:name=".Evento" />
+        <activity android:name=".Filtrarevento"></activity>
     </application>
 
 </manifest>
