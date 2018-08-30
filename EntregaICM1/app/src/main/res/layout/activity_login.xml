@@ -43,43 +43,56 @@
     <RelativeLayout
         android:id="@+id/BotonesLogin"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
+        android:layout_height="125dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="10dp">
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="37dp">
 
 
         <Button
             android:id="@+id/IniciarSesion"
             android:layout_width="150dp"
             android:layout_height="40dp"
-            android:layout_alignParentLeft="true"
             android:layout_alignLeft="@+id/CrearUsuario"
+            android:layout_alignParentLeft="true"
             android:layout_margin="20dp"
             android:background="@drawable/botonplano"
-            android:text="Iniciar Sesion"
+            android:text="Iniciar Sesion Huesped"
 
             />
 
-    <Button
-        android:id="@+id/CrearUsuario"
-        android:layout_width="150dp"
-        android:layout_height="40dp"
-        android:layout_alignParentRight="true"
-        android:background="@drawable/botonplano"
-        android:layout_margin="20dp"
-        android:text="Crear Usuario"
+        <Button
+            android:id="@+id/iniciarSesionAnfitrion"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
 
-        />
-     <Button
-         android:id="@+id/OlvidoContrasena"
-         android:layout_width="150dp"
-         android:layout_height="40dp"
-         android:layout_below="@+id/CrearUsuario"
-         android:background="@drawable/botonplano"
+            android:layout_alignStart="@+id/IniciarSesion"
+            android:layout_below="@+id/IniciarSesion"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/botonplano"
+            android:text="Iniciar Sesion Anfitrion" />
 
-         android:layout_centerHorizontal="true"
-         android:text="Olvido Contaseña"/>
+        <Button
+            android:id="@+id/CrearUsuario"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/botonplano"
+            android:text="Crear Usuario"
+
+            />
+
+        <Button
+            android:id="@+id/OlvidoContrasena"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_alignStart="@+id/CrearUsuario"
+
+            android:layout_below="@+id/IniciarSesion"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/botonplano"
+            android:text="Olvido Contaseña" />
 
     </RelativeLayout>
 

@@ -10,6 +10,7 @@ public class LoginActivity extends AppCompatActivity {
 
     private Button CrearUsuario;
     private Button IniciarSesion;
+    private Button IniciarSesionAnfitrion;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,10 +37,24 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
+        IniciarSesionAnfitrion = (Button) findViewById(R.id.iniciarSesionAnfitrion) ;
+        IniciarSesionAnfitrion.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {IniciarSesionAnfitrion();
+
+            }
+        });
+
     }
 
     public void crearUsuario(){
         Intent Crear = new Intent(this, CrearUsuarioActivity.class);
+        startActivity(Crear);
+    }
+
+    public void IniciarSesionAnfitrion(){
+        Intent Crear = new Intent(this, Anfitrion.class);
         startActivity(Crear);
     }
 
