@@ -34,7 +34,9 @@
         <activity android:name=".Noticia" />
         <activity android:name=".Filtrarnoticias" />
         <activity android:name=".Anfitrion" />
-        <activity android:name=".EditarPerfilAnfitrion"></activity>
+        <activity android:name=".EditarPerfilAnfitrion" />
+        <activity android:name=".ModificarLugar" />
+        <activity android:name=".VerLugar"></activity>
     </application>
 
 </manifest>

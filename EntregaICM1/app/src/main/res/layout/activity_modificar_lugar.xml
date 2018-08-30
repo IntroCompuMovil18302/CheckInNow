@@ -23,7 +23,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:gravity="center_vertical|center_horizontal"
-        android:text="Nombre del lugar"
+        android:text="Modificar lugar"
         android:textSize="30sp" />
 
     <ImageView
@@ -34,7 +34,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="45dp"
         android:layout_weight="1"
-        app:srcCompat="@drawable/foto_usuario" />
+        app:srcCompat="@drawable/lugarpaisaje" />
 
     <Button
         android:id="@+id/button5"
@@ -43,59 +43,47 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
         android:background="@color/colorAccent"
-        android:text="Eliminar cuenta"
+        android:text="Eliminar alojamiento"
         android:textColor="@color/colorPrimary" />
 
     <Button
         android:id="@+id/button6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="207dp"
-        android:text="Seleccionar nueva foto de perfil"
-        android:textSize="10sp" />
-
-    <Button
-        android:id="@+id/button8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="58dp"
-        android:text="Guardar datos" />
+        android:layout_marginBottom="57dp"
+        android:text="Guardar cambios" />
 
     <EditText
-        android:id="@+id/editText5"
-        android:layout_width="match_parent"
+        android:id="@+id/editText7"
+        android:layout_width="359dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/editText9"
+        android:layout_below="@+id/editText6"
+        android:layout_centerHorizontal="true"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Ingrese su nuevo correo electrónico"
+        android:text="Ingrese el nuevo costo por noche"
         android:textSize="14sp" />
 
     <EditText
-        android:id="@+id/editText9"
-        android:layout_width="match_parent"
+        android:id="@+id/editText6"
+        android:layout_width="359dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/editText8"
+        android:layout_below="@+id/imageView4"
+        android:layout_marginStart="13dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Ingrese su nuevo número de contacto"
+        android:text="Ingrese el nuevo nombre del lugar"
         android:textSize="14sp" />
 
-    <EditText
-        android:id="@+id/editText8"
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="347dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/button6"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Ingrese su nuevo nombre de usuario"
-        android:textSize="14sp" />
+        android:layout_below="@+id/editText7"
+        android:layout_centerHorizontal="true"
+        android:text="Agregar fotografías" />
 
 </RelativeLayout>
