@@ -18,6 +18,9 @@ public class SesionActivity extends AppCompatActivity {
     private RelativeLayout BotonReservas;
     private RelativeLayout BotonCalificacion;
 
+    Button Eventos;
+    Button Noticias;
+
     @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,6 +76,28 @@ public class SesionActivity extends AppCompatActivity {
 
             }
         });
+
+
+        Eventos=(Button)findViewById(R.id.buteventos);
+        Noticias=(Button)findViewById(R.id.butnoticias);
+
+        Eventos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(),Eventopricipal.class);
+                startActivity(intent);
+            }
+        });
+
+        Noticias.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(),Noticiaprincipal.class);
+                startActivity(intent);
+            }
+        });
+
+
 
     }
 
