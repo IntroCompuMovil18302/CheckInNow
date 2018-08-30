@@ -32,7 +32,9 @@
         <activity android:name=".Filtrarevento" />
         <activity android:name=".Noticiaprincipal" />
         <activity android:name=".Noticia" />
-        <activity android:name=".Filtrarnoticias"></activity>
+        <activity android:name=".Filtrarnoticias" />
+        <activity android:name=".Anfitrion" />
+        <activity android:name=".EditarPerfilAnfitrion"></activity>
     </application>
 
 </manifest>
