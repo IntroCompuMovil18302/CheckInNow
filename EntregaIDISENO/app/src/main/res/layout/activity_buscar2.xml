@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Buscar2Activity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.6"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ringbell" />
+
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/logo" />
+
+
+    <LinearLayout
+        android:id="@+id/BarraBotones"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/Logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="#B3E5FC">
+
+        <RelativeLayout
+            android:id="@+id/BotonHome"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/icono" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img1"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="Home" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/BotonPerfil"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/icono" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img2"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="Perfil" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/BotonBuscar"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/icono" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img3"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="Buscar" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/BotonReservas"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/img4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/icono" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img4"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="Reservas" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/BotonCalificacion"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/img5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/icono" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img5"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="Califiacion" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BarraBotones"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:padding="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/Mapa"
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mapas" />
+
+
+            <TextView
+                android:id="@+id/InfoLugarSeleccionada"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Mapa"
+                android:layout_centerHorizontal="true"
+                android:text="Lugar Selccionado" />
+
+            <ImageView
+                android:id="@+id/ImagenLugarSeleccionada"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:layout_below="@id/InfoLugarSeleccionada"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/lugarpaisaje" />
+
+            <TextView
+                android:id="@+id/TextoLugarSeleccionada"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ImagenLugarSeleccionada"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/lugarpaisaje"
+                android:text="Lugar LugarLugar LugarLugar LugarLugar LugarLugar LugarLugar LugarLugar LugarLugar LugarLugar LugarLugar Lugar"
+                android:textSize="13dp"/>
+
+            <TableLayout
+                android:id="@+id/TablaLugarSeleccionada"
+                android:layout_below="@+id/TextoLugarSeleccionada"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:stretchColumns="1"
+                android:background="#ffff"
+                android:layout_marginTop="10dp">
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="Precio"
+                        android:padding="3dip"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="$ 000.000"
+                        android:gravity="right"
+                        android:padding="3dip" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="Calificacion"
+                        android:padding="3dip"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="$ 000.000"
+                        android:gravity="right"
+                        android:padding="3dip" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="Opiniones"
+                        android:padding="3dip"
+                        android:gravity="center"/>
+
+
+                </TableRow>
+
+                <TableRow>
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/foto_usuario"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="Opiniones Opiniones Opiniones "
+                        android:padding="3dip"
+                        android:gravity="center"/>
+                </TableRow>
+
+                <TableRow>
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/foto_usuario"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="Opiniones Opiniones Opiniones "
+                        android:padding="3dip"
+                        android:gravity="center"/>
+                </TableRow>
+                <TableRow>
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/foto_usuario"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="Opiniones Opiniones Opiniones "
+                        android:padding="3dip"
+                        android:gravity="center"/>
+                </TableRow>
+            </TableLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/TablaLugarSeleccionada"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp"
+                >
+
+                <Button
+                    android:id="@+id/BotonReservarLugar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/botonplano"
+                    android:text="Reservar"
+                    android:layout_margin="5dp"
+
+                    />
+                <Button
+                    android:id="@+id/botonLLegarLugares"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/botonplano"
+                    android:text="Llegar"
+                    android:layout_margin="5dp"
+
+                    />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>
