@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Otros.Perfil2Activity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ringbell"
+        android:scaleType="centerCrop"
+        android:alpha="0.6"/>
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/logo"
+        />
+
+
+
+
+    <LinearLayout
+        android:id="@+id/BarraBotones"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/Logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="#B3E5FC">
+
+        <RelativeLayout
+            android:id="@+id/BotonHome"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/icono"/>
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/img1"
+                android:gravity="center"
+                android:text="Home"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/BotonPerfil"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/icono"/>
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/img2"
+                android:gravity="center"
+                android:text="Perfil"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/BotonBuscar"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/icono"/>
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/img3"
+                android:gravity="center"
+                android:text="Buscar"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/BotonReservas"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/img4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/icono"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/img4"
+                android:gravity="center"
+                android:text="Reservas"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/BotonCalificacion"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/img5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/icono"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/img5"
+                android:gravity="center"
+                android:text="Califiacion"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/Cambios"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BarraBotones"
+        android:layout_margin="5dp"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:background="#FFFF"
+        android:alpha="0.7">
+
+        <LinearLayout
+            android:id="@+id/campos1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Nombres"/>
+            <EditText
+                android:id="@+id/CambioNombres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Nombres"
+                android:textSize="15dp"/>
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Apellidos"/>
+            <EditText
+                android:id="@+id/CambioApellidos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Apellidos"
+                android:textSize="15dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/campos2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/campos1">
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Correo"/>
+            <EditText
+                android:id="@+id/CambioCorreo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="correo@gmail.com"
+                android:textSize="15dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/campos3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/campos2">
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Contraseña"/>
+            <EditText
+                android:id="@+id/Contraseñavieja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Antigua *****"
+                android:textSize="15dp"
+                android:inputType="textPassword"/>
+
+            <EditText
+                android:id="@+id/NuevaContraseña"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Nueva *****s"
+                android:textSize="15dp"
+                android:inputType="textPassword"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/campos4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/campos3">
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Celular"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/NuevaCelular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="00 000000000"
+                android:textSize="15dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/campos5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/campos4">
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Tarjeta"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/NuevaTarjeta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="00000000000"
+                android:textSize="15dp"/>
+            <EditText
+                android:id="@+id/NuevaCCV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="CCV"
+                android:textSize="15dp"
+                android:inputType="numberPassword"/>
+            <EditText
+                android:id="@+id/NuevaFechaTarjeta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="MM/AA"
+                android:textSize="15dp"
+                android:inputType="numberPassword"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/BarraOpciones"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/Cambios"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/BotonGuardarCambios"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/botonplano"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:text="Guardar"
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

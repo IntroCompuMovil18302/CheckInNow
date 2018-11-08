@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <!--//        SubMenu prim= menu.addSubMenu("Version Web");-->
+    <!--//        SubMenu segun= menu.addSubMenu("Compartir");-->
+    <!--//        SubMenu terce= menu.addSubMenu("Configuracion");-->
+    <!--//        Intent intent= new Intent(Intent.ACTION_VIEW, Uri.parse("http://facebook.com"));-->
+    <!--//        Intent intent2= new Intent(Intent.ACTION_VIEW, Uri.parse("http://instagram.com"));-->
+    <!--//        Intent intent3= new Intent(Intent.ACTION_VIEW, Uri.parse("http://plus.google.com"));-->
+    <!--//        Intent intent4= new Intent(Intent.ACTION_VIEW, Uri.parse("http://twitter.com"));-->
+    <!--//        prim.add(0,2,2,"Facebook").setIcon(R.drawable.face).setIntent(intent);-->
+    <!--//        prim.add(0,3,3,"Instragram").setIcon(R.drawable.instagram_icon).setIntent(intent2);-->
+    <!--//        prim.add(0,4,4,"Google+").setIcon(R.drawable.gprofile).setIntent(intent3);-->
+    <!--//        prim.add(0,5,5,"Twitter").setIcon(R.drawable.twitter_bird).setIntent(intent4);-->
+
+
+        <item
+            android:id="@+id/opcion1"
+            android:orderInCategory="100"
+            android:title="Version Web">
+            <menu>
+                <item
+                    android:id="@+id/opcion1a"
+                    android:orderInCategory="100"
+                    android:title="Facebook"
+                    android:icon="@drawable/fav_ic"
+                    />
+                <item
+                    android:id="@+id/opcion1b"
+                    android:orderInCategory="100"
+                    android:title="Instagram"
+                    android:icon="@drawable/ic_instagram"
+                    />
+                <item
+                    android:id="@+id/opcion1c"
+                    android:orderInCategory="100"
+                    android:title="Google Plus"
+                    android:icon="@drawable/ic_google_plus"
+                    />
+                <item
+                    android:id="@+id/opcion1d"
+                    android:orderInCategory="100"
+                    android:title="Twitter"
+                    android:icon="@drawable/ic_twitter"
+                    />
+            </menu>
+        </item>
+
+
+        <item
+            android:id="@+id/opcion2"
+            android:orderInCategory="100"
+            android:title="Compartir"
+            />
+        <item
+            android:id="@+id/opcion3"
+            android:orderInCategory="100"
+            android:title="Configuracion"
+            />
+
+
+</menu>

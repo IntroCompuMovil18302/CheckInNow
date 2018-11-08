@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primary_light"
+        android:layout_margin="2dp">
+        <TextView
+            android:id="@+id/Logo"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Busqueda Precisa"
+            android:gravity="center"
+            android:textColor="@color/primary_text"
+            android:textSize="20dp"
+            android:fontFamily="@font/oestrogen"
+            />
+        <RelativeLayout
+            android:layout_below="@id/Logo"
+            android:id="@+id/buscadorBarra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+            <EditText
+                android:id="@+id/textoBuscar"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp"
+                android:alpha="0.9"
+                android:background="@drawable/bordescurvos"
+                android:clickable="true"
+                android:focusable="false"
+                android:hint="Buscar por fecha..."
+                android:maxLines="1" />
+
+            <Button
+                android:id="@+id/txtbuscar"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:text="Buscar por ubicacion"
+                android:layout_marginTop="3dp"
+                android:layout_below="@id/textoBuscar"
+                android:textSize="15dp"
+                android:textColor="@color/primary_light"
+                android:background="@drawable/botonplano"
+                android:fontFamily="@font/juiceline"/>
+
+
+            <Button
+                android:id="@+id/botonGO"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/textoBuscar"
+                android:background="@drawable/botonplano"
+                android:fontFamily="@font/juiceline"
+                android:text="GO"
+                android:textColor="@color/primary_light"
+                android:textSize="15dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="330dp"
+            android:layout_height="370dp"
+            android:layout_below="@id/buscadorBarra"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp">
+
+            <FrameLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+
+                <fragment android:id="@+id/map"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    class="com.google.android.gms.maps.MapFragment"></fragment>
+
+                <ListView
+                    android:id="@+id/listView"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
+                    ></ListView>
+            </FrameLayout>
+
+        </RelativeLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    tools:context=".Anfitrion.MenuAnfitrionFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/Logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Hola Anfitrion"
+        android:gravity="center"
+        android:textColor="@color/primary_text"
+        android:textSize="40dp"
+        android:fontFamily="@font/oestrogen"
+        />
+    <Button
+        android:id="@+id/Agregarbutton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="216dp"
+        android:foregroundGravity="center_vertical|center_horizontal|center"
+        android:gravity="center"
+        android:text="@string/botonagregarlocacion"
+        android:textSize="15dp"
+        android:textColor="@color/primary_light"
+        android:background="@drawable/botonplano"
+        android:fontFamily="@font/juiceline"/>
+
+    <Button
+        android:id="@+id/verbutton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Agregarbutton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Ver"
+        android:textSize="15dp"
+        android:textColor="@color/primary_light"
+        android:background="@drawable/botonplano"
+        android:fontFamily="@font/juiceline"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/russian_house"
+            android:scaleType="fitEnd"
+            android:alpha="0.2"/>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/chinese_house"
+            android:scaleType="fitEnd"
+            android:alpha="0.2"/>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/hotel"
+            android:scaleType="fitEnd"
+            android:alpha="0.2"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

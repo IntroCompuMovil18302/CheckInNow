@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SesionIniciada.facebookfra">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primary_light">
+
+        <RelativeLayout
+            android:id="@+id/buscadorBarra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+        <EditText android:id="@+id/textoBuscar"
+            android:background="@drawable/bordescurvos"
+            android:layout_height="wrap_content"
+            android:layout_width="270dp"
+            android:layout_centerVertical="true"
+            android:hint="Buscar por fecha..."
+            android:alpha="0.9"/>
+
+        <TextView
+            android:background="@drawable/bordescurvos"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:text="Buscar por ubicacion oprima GO"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/textoBuscar"/>
+
+        <Button
+            android:id="@+id/botonBuscar"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/textoBuscar"
+            android:layout_marginTop="22dp"
+            android:text="GO" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="320dp"
+            android:layout_height="390dp"
+            android:layout_below="@id/buscadorBarra"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp">
+
+            <FrameLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <fragment
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>

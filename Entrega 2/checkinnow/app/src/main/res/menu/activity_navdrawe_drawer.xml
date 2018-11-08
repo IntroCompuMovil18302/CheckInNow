@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_account_box"
+            android:title="Huesped" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/marca"
+            android:title="Busqueda Global" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/marca"
+            android:title="Busqueda precisa" />
+
+    </group>
+
+    <item android:title="Anfitrion">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Menu Anfitrion" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>
