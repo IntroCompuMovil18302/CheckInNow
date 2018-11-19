@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CrearUsuario.CrearUsuarioActivity"
+    android:background="@color/primary_light"
+    >
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/curvos">
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/imagenPerfil"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/usuarioadd"
+            app:civ_border_color="@color/primary_text"
+            app:civ_border_width="3dp" />
+
+        <TextView
+            android:id="@+id/TextoNombresRegistro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/enagol"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/secondary_text"
+            android:textSize="15dp"
+            android:text="Nombre"
+            android:layout_below="@+id/imagenPerfil"/>
+        />
+
+        <EditText
+            android:id="@+id/NombresRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/TextoNombresRegistro"
+            android:layout_marginTop="5dp"
+            android:inputType="textPersonName"
+            />
+
+        <TextView
+            android:id="@+id/TextoApellidosRegistros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/enagol"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/secondary_text"
+            android:textSize="15dp"
+            android:text="Apellido"
+            android:layout_below="@id/NombresRegistro"/>
+        />
+
+        <EditText
+            android:id="@+id/ApellidosRegistros"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/TextoApellidosRegistros"
+            android:layout_marginTop="5dp"
+            android:inputType="textPersonName"/>
+
+        <TextView
+            android:id="@+id/TextoCorreoRegistro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/enagol"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/secondary_text"
+            android:textSize="15dp"
+            android:text="Correo"
+            android:layout_below="@id/ApellidosRegistros"/>
+        />
+
+        <EditText
+            android:id="@+id/CorreoRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/TextoCorreoRegistro"
+            android:layout_marginTop="5dp"
+            android:inputType="textEmailAddress"
+
+            />
+
+        <TextView
+            android:id="@+id/TextoContaseñaRegistro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/enagol"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/secondary_text"
+            android:textSize="15dp"
+            android:text="Contraseña"
+            android:layout_below="@id/CorreoRegistro"/>
+        />
+        <EditText
+            android:id="@+id/ContaseñaRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint=""
+            android:layout_below="@+id/CorreoRegistro"
+            android:layout_marginTop="5dp"
+            android:inputType="textPassword"
+            />
+        <TextView
+            android:id="@+id/TextospinerPais"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/enagol"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/secondary_text"
+            android:textSize="15dp"
+            android:layout_below="@id/ContaseñaRegistro"
+            android:layout_toLeftOf="@id/TextoFechaNacimiento"
+            android:text="Pais"/>
+
+
+        <EditText
+            android:id="@+id/PaisEdit"
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/TextospinerPais"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="2dp"
+            />
+
+        <TextView
+            android:id="@+id/TextoFechaNacimiento"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/enagol"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/secondary_text"
+            android:textSize="15dp"
+            android:text="Fecha Nacimiento"
+            android:layout_below="@id/ContaseñaRegistro"
+            android:layout_toRightOf="@id/PaisEdit"/>
+
+        <ImageButton
+            android:id="@+id/ImagenFechaNacimiento"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:hint=""
+            android:layout_below="@+id/TextoFechaNacimiento"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/calendario"
+            android:scaleType="centerCrop"
+            />
+        <EditText
+            android:id="@+id/FechaNacimiento"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:hint=""
+            android:layout_below="@+id/TextoFechaNacimiento"
+            android:layout_toLeftOf="@+id/ImagenFechaNacimiento"
+            android:layout_marginTop="5dp"
+            android:focusable="false"
+            android:clickable="true"
+            android:maxLines="1"
+            />
+
+
+
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/Siguiente"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="5dp"
+        android:drawableTop="@drawable/flecha_siguiente"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/russian_house"
+            android:scaleType="fitEnd"
+            android:alpha="0.2"/>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/chinese_house"
+            android:scaleType="fitEnd"
+            android:alpha="0.2"/>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/hotel"
+            android:scaleType="fitEnd"
+            android:alpha="0.2"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

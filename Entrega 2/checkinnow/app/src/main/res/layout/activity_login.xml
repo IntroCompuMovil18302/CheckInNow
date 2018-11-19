@@ -1,0 +1,172 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Otros.LoginActivity"
+    android:background="@color/primary_light"
+
+    >
+
+
+    <TextView
+        android:id="@+id/Logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/NombreApp"
+        android:gravity="center"
+        android:textColor="@color/primary_text"
+        android:textSize="40dp"
+        android:fontFamily="@font/oestrogen"
+        />
+    <RelativeLayout
+        android:id="@+id/cuadroLogin"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/Logo"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/curvos"
+        >
+        <TextView
+            android:id="@+id/Login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:fontFamily="@font/schoolrules"
+            android:textSize="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/primary_text"/>
+        <TextView
+            android:id="@+id/usuarioLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/enagol"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/secondary_text"
+            android:textSize="15dp"
+            android:text="Usuario"
+            android:layout_below="@+id/Login"/>
+        <EditText
+            android:id="@+id/TextoUsuario"
+            android:layout_below="@+id/usuarioLogin"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint=""/>
+        <TextView
+            android:id="@+id/contraseñaLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/enagol"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/secondary_text"
+            android:textSize="15dp"
+            android:text="Contraseña"
+            android:layout_below="@+id/TextoUsuario"/>
+        <EditText
+            android:id="@+id/TextoContraseña"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword"
+            android:layout_below="@+id/contraseñaLogin"
+            android:hint=""/>
+        <TextView
+            android:id="@+id/OlvidoLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/robotoregular"
+            android:textColor="@color/third_text"
+            android:textSize="13dp"
+            android:text="Recuperar Contraseña"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/BotonesLogin"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/cuadroLogin">
+
+        <Button
+            android:id="@+id/IniciarSesion"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/botonplano"
+            android:text="Iniciar Sesion"
+            android:textSize="13dp"
+            android:textColor="@color/primary_light"
+            android:fontFamily="@font/juiceline"
+            />
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/recordarCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Recordarme"
+            android:textSize="11dp"
+            android:fontFamily="@font/robotoregular"
+            android:textColor="@color/secondary_text"/>
+        <Button
+            android:id="@+id/CrearUsuario"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/recordarCheck"
+            android:background="@drawable/botonplano"
+            android:layout_marginRight="20dp"
+            android:text="Crear Usuario"
+            android:textSize="13dp"
+            android:textColor="@color/primary_light"
+            android:fontFamily="@font/juiceline"
+
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/russian_house"
+            android:scaleType="fitEnd"
+            android:alpha="0.2"/>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/chinese_house"
+            android:scaleType="fitEnd"
+            android:alpha="0.2"/>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/hotel"
+            android:scaleType="fitEnd"
+            android:alpha="0.2"/>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
