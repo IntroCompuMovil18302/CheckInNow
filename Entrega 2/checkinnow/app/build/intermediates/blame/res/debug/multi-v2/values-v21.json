@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/carlosrestrepo/Documents/checkinnow/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
+            "outputFile": "/Users/carlosrestrepo/Documents/GitHub/CheckInNow/Entrega 2/checkinnow/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
             "map": [
                 {
                     "source": "/Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0-rc02.aar/b06020a04cd0d489bb42a2e6e9a04f7f/res/values-v21/values-v21.xml",
@@ -42,6 +42,23 @@
                     }
                 },
                 {
+                    "source": "/Users/carlosrestrepo/Documents/GitHub/CheckInNow/Entrega 2/checkinnow/app/src/main/res/values-v21/google_maps_api.xml",
+                    "from": {
+                        "startLines": "22",
+                        "startColumns": "4",
+                        "startOffsets": "906",
+                        "endColumns": "137",
+                        "endOffsets": "1039"
+                    },
+                    "to": {
+                        "startLines": "6",
+                        "startColumns": "4",
+                        "startOffsets": "354",
+                        "endColumns": "137",
+                        "endOffsets": "487"
+                    }
+                },
+                {
                     "source": "/Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-rc02.aar/27f3caa408d97397486e8d40119b56f1/res/values-v21/values-v21.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,13",
@@ -58,23 +75,6 @@
                         "endLines": "2,3,4,5,264,265,272,276,314,319",
                         "endColumns": "103,63,66,63,115,125,125,127,12,12",
                         "endOffsets": "154,218,285,349,19511,19637,20094,20390,22442,22780"
-                    }
-                },
-                {
-                    "source": "/Users/carlosrestrepo/Documents/checkinnow/app/src/main/res/values-v21/google_maps_api.xml",
-                    "from": {
-                        "startLines": "22",
-                        "startColumns": "4",
-                        "startOffsets": "906",
-                        "endColumns": "137",
-                        "endOffsets": "1039"
-                    },
-                    "to": {
-                        "startLines": "6",
-                        "startColumns": "4",
-                        "startOffsets": "354",
-                        "endColumns": "137",
-                        "endOffsets": "487"
                     }
                 },
                 {

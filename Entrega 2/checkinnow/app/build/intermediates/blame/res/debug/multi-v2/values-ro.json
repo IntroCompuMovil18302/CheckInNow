@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/carlosrestrepo/Documents/checkinnow/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ro/values-ro.xml",
+            "outputFile": "/Users/carlosrestrepo/Documents/GitHub/CheckInNow/Entrega 2/checkinnow/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ro/values-ro.xml",
             "map": [
                 {
                     "source": "/Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc02.aar/d545f7c6a99f9f5b7a50d5083a877d10/res/values-ro/values-ro.xml",
