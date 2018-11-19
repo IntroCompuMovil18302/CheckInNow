@@ -1,0 +1,399 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:2:1-68:12
+INJECTED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:2:1-68:12
+INJECTED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:2:1-68:12
+INJECTED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:2:1-68:12
+MERGED from [com.android.support:design:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/design-28.0.0-rc02.aar/99666d1e21f8cf4316132ffb970de6c0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:appcompat-v7:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc02.aar/d545f7c6a99f9f5b7a50d5083a877d10/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/83f2ef917b3972912c2060c371208fae/AndroidManifest.xml:2:1-11:12
+MERGED from [de.hdodenhof:circleimageview:2.2.0] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/circleimageview-2.2.0.aar/59faecfe17c5a5d004fe0d1235be0113/AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.firebase:firebase-storage:16.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.0.1.aar/100baaf25986c77c18710fc02c350f4f/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.firebase:firebase-auth:16.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.1.aar/28c6fd83c63b939a5232d365bbaf2716/AndroidManifest.xml:17:1-38:12
+MERGED from [com.google.firebase:firebase-database:16.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/firebase-database-16.0.1.aar/a7516002c3bf8d30cc74898ecc5d5751/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/play-services-location-15.0.1.aar/4a0145ad885ed85815702d625301de8d/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/e34aea9a5be15d048cf66b8a147ff039/AndroidManifest.xml:17:1-32:12
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.0] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/firebase-auth-interop-16.0.0.aar/965dd49ebab548f65a1400acc3062276/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.firebase:firebase-database-connection:16.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/firebase-database-connection-16.0.1.aar/8b7e633e2f48185fdfc2ccdb0befc4a0/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.firebase:firebase-common:16.0.0] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.0.aar/887eafded2f79e4e7f791ad07e3f0add/AndroidManifest.xml:2:1-16:12
+MERGED from [com.google.android.gms:play-services-flags:15.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/play-services-flags-15.0.1.aar/ab44a47ff6381607d05ba32f70278fce/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/5e3f348488aeade1f8feaecf7993d00c/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/d6cbbcffe2aaa04c7b12e5ee8ea474ad/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-storage-common:16.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/firebase-storage-common-16.0.1.aar/15b7b5c4ae3219ff52f6c65fdf4ef444/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.firebase:firebase-database-collection:15.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/firebase-database-collection-15.0.1.aar/fa504f215cb3e155accf1d5600e71750/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/f3d6ea3e94e17da16fe2536960eef66e/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/522806cfcd753f7fbb47bb96c85ad2df/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0-rc02.aar/dba3d0d95f39a9592c02a0d653b81406/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0-rc02.aar/ab69a02249606067adcdd0a319100356/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0-rc02.aar/701d38c9b0c84f8ad63cddf7a2a5eede/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0-rc02.aar/4f6a79d2d74d653827461fbd01d90599/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0-rc02.aar/de0366adf38f813eca79c31535385d86/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0-rc02.aar/17444eadc0d55c407f9d2126c5c77381/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0-rc02.aar/145528b9bcd27027a72e3ac22b66e021/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/loader-28.0.0-rc02.aar/180d8edeee66188fcbead6f3a0439236/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0-rc02.aar/89df63902e57d665396e9696eabe492d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0-rc02.aar/f4c2c37ea3f9cc0ea4c55219ace43241/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0-rc02.aar/6150cc79615ecc51661735bf92888667/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0-rc02.aar/649f37685a9bdaac2b1f30c6b8759470/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/customview-28.0.0-rc02.aar/48276d0777b9f0288f3f2e6f719b8838/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0-rc02.aar/6bf9a1f412376b8e1bce121c505ff833/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0-rc02.aar/1c94fea943c826cc97c6a199bb2070f9/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/transition-28.0.0-rc02.aar/7449ef04e3b315de2698676bf89d2961/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0-rc02.aar/b06020a04cd0d489bb42a2e6e9a04f7f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-rc02.aar/27f3caa408d97397486e8d40119b56f1/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0-rc02.aar/9cae701b9ee64e995e2e8ba6db7c822f/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0-rc02.aar/5991edadd0cd8ec30ac1cbc47e8ca11a/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/351d8d8fdb3846d1798e22358480e11d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0-rc02.aar/a21558a519bc63b7d7a6682675691d65/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0-rc02.aar/7a04fd661ac79e94684421f681db1e1a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/print-28.0.0-rc02.aar/83faf83fb66338a78ef33b1445943b37/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/b13ea54df49e823106a88ff43a50beae/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0-rc02.aar/c1828c8eb05373a1887f5469fbe6ea1d/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/5692490b85cda4aea80aad7b085030e7/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/909662273f7b4424034ae32772079ae3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0-rc02.aar/96e12a55bfb567239e71686320ae7b7b/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:2:1-68:12
+INJECTED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:2:1-68:12
+INJECTED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:2:1-68:12
+	package
+		ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:4:5-40
+		INJECTED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml
+		ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:2:1-68:12
+		INJECTED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml
+		ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:2:1-68:12
+		INJECTED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:2:11-69
+uses-feature#android.hardware.camera
+ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:6:5-8:35
+	android:required
+		ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:8:9-32
+	android:name
+		ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:7:9-47
+uses-permission#android.permission.CAMERA
+ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:10:5-65
+	android:name
+		ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:10:22-62
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:11:5-81
+	android:name
+		ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:11:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:12:5-80
+	android:name
+		ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:12:22-77
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:13:5-81
+	android:name
+		ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:13:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:14:5-79
+	android:name
+		ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:14:22-76
+application
+ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:16:5-66:19
+MERGED from [com.android.support:design:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/design-28.0.0-rc02.aar/99666d1e21f8cf4316132ffb970de6c0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/design-28.0.0-rc02.aar/99666d1e21f8cf4316132ffb970de6c0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/83f2ef917b3972912c2060c371208fae/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/83f2ef917b3972912c2060c371208fae/AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:2.2.0] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/circleimageview-2.2.0.aar/59faecfe17c5a5d004fe0d1235be0113/AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:2.2.0] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/circleimageview-2.2.0.aar/59faecfe17c5a5d004fe0d1235be0113/AndroidManifest.xml:9:5-20
+MERGED from [com.google.firebase:firebase-auth:16.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.1.aar/28c6fd83c63b939a5232d365bbaf2716/AndroidManifest.xml:22:5-36:19
+MERGED from [com.google.firebase:firebase-auth:16.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.1.aar/28c6fd83c63b939a5232d365bbaf2716/AndroidManifest.xml:22:5-36:19
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/play-services-location-15.0.1.aar/4a0145ad885ed85815702d625301de8d/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/play-services-location-15.0.1.aar/4a0145ad885ed85815702d625301de8d/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/e34aea9a5be15d048cf66b8a147ff039/AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/e34aea9a5be15d048cf66b8a147ff039/AndroidManifest.xml:30:5-20
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.0] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/firebase-auth-interop-16.0.0.aar/965dd49ebab548f65a1400acc3062276/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.0] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/firebase-auth-interop-16.0.0.aar/965dd49ebab548f65a1400acc3062276/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-common:16.0.0] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.0.aar/887eafded2f79e4e7f791ad07e3f0add/AndroidManifest.xml:8:5-14:19
+MERGED from [com.google.firebase:firebase-common:16.0.0] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.0.aar/887eafded2f79e4e7f791ad07e3f0add/AndroidManifest.xml:8:5-14:19
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/5e3f348488aeade1f8feaecf7993d00c/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/5e3f348488aeade1f8feaecf7993d00c/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/d6cbbcffe2aaa04c7b12e5ee8ea474ad/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/d6cbbcffe2aaa04c7b12e5ee8ea474ad/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/f3d6ea3e94e17da16fe2536960eef66e/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/f3d6ea3e94e17da16fe2536960eef66e/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/522806cfcd753f7fbb47bb96c85ad2df/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/522806cfcd753f7fbb47bb96c85ad2df/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-compat:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-rc02.aar/27f3caa408d97397486e8d40119b56f1/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-rc02.aar/27f3caa408d97397486e8d40119b56f1/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0-rc02.aar/9cae701b9ee64e995e2e8ba6db7c822f/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0-rc02.aar/9cae701b9ee64e995e2e8ba6db7c822f/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-rc02.aar/27f3caa408d97397486e8d40119b56f1/AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:21:9-35
+	android:label
+		ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:19:9-41
+	tools:ignore
+		ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:23:9-48
+	android:roundIcon
+		ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:20:9-54
+	android:icon
+		ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:18:9-43
+	android:allowBackup
+		ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:17:9-35
+	android:theme
+		ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:22:9-40
+activity#com.checkinnow.checkinnow.Otros.LoginActivity
+ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:24:9-30:20
+	android:name
+		ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:24:19-54
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:25:13-29:29
+action#android.intent.action.MAIN
+ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:26:17-69
+	android:name
+		ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:26:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:28:17-77
+	android:name
+		ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:28:27-74
+activity#com.checkinnow.checkinnow.CrearUsuario.CrearUsuarioActivity
+ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:31:9-71
+	android:name
+		ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:31:19-68
+activity#com.checkinnow.checkinnow.Otros.SesionActivity
+ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:32:9-58
+	android:name
+		ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:32:19-55
+activity#com.checkinnow.checkinnow.Otros.PerfilActivity
+ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:33:9-58
+	android:name
+		ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:33:19-55
+activity#com.checkinnow.checkinnow.Otros.Perfil2Activity
+ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:34:9-59
+	android:name
+		ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:34:19-56
+activity#com.checkinnow.checkinnow.Otros.BuscarActivity
+ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:35:9-58
+	android:name
+		ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:35:19-55
+activity#com.checkinnow.checkinnow.Otros.Buscar2Activity
+ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:36:9-59
+	android:name
+		ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:36:19-56
+activity#com.checkinnow.checkinnow.Otros.ReservasActivity
+ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:37:9-60
+	android:name
+		ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:37:19-57
+activity#com.checkinnow.checkinnow.Otros.CalificacionActivity
+ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:38:9-64
+	android:name
+		ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:38:19-61
+activity#com.checkinnow.checkinnow.NavdraweActivity
+ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:39:9-42:59
+	android:label
+		ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:41:13-60
+	android:theme
+		ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:42:13-56
+	android:name
+		ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:40:13-45
+provider#android.support.v4.content.FileProvider
+ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:52:9-60:20
+	android:grantUriPermissions
+		ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:56:13-47
+	android:authorities
+		ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:54:13-59
+	android:exported
+		ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:55:13-37
+	android:name
+		ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:53:13-67
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:57:9-59:50
+	android:resource
+		ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:59:13-47
+	android:name
+		ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:58:13-63
+meta-data#com.google.android.geo.API_KEY
+ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:62:9-64:55
+	android:value
+		ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:64:13-52
+	android:name
+		ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml:63:13-58
+uses-sdk
+INJECTED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml
+INJECTED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:design:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/design-28.0.0-rc02.aar/99666d1e21f8cf4316132ffb970de6c0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/design-28.0.0-rc02.aar/99666d1e21f8cf4316132ffb970de6c0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc02.aar/d545f7c6a99f9f5b7a50d5083a877d10/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc02.aar/d545f7c6a99f9f5b7a50d5083a877d10/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/83f2ef917b3972912c2060c371208fae/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/83f2ef917b3972912c2060c371208fae/AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:2.2.0] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/circleimageview-2.2.0.aar/59faecfe17c5a5d004fe0d1235be0113/AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:2.2.0] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/circleimageview-2.2.0.aar/59faecfe17c5a5d004fe0d1235be0113/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-storage:16.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.0.1.aar/100baaf25986c77c18710fc02c350f4f/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-storage:16.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.0.1.aar/100baaf25986c77c18710fc02c350f4f/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth:16.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.1.aar/28c6fd83c63b939a5232d365bbaf2716/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-auth:16.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.1.aar/28c6fd83c63b939a5232d365bbaf2716/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-database:16.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/firebase-database-16.0.1.aar/a7516002c3bf8d30cc74898ecc5d5751/AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-database:16.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/firebase-database-16.0.1.aar/a7516002c3bf8d30cc74898ecc5d5751/AndroidManifest.xml:6:5-44
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/play-services-location-15.0.1.aar/4a0145ad885ed85815702d625301de8d/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/play-services-location-15.0.1.aar/4a0145ad885ed85815702d625301de8d/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/e34aea9a5be15d048cf66b8a147ff039/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/e34aea9a5be15d048cf66b8a147ff039/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.0] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/firebase-auth-interop-16.0.0.aar/965dd49ebab548f65a1400acc3062276/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.0] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/firebase-auth-interop-16.0.0.aar/965dd49ebab548f65a1400acc3062276/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-database-connection:16.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/firebase-database-connection-16.0.1.aar/8b7e633e2f48185fdfc2ccdb0befc4a0/AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-database-connection:16.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/firebase-database-connection-16.0.1.aar/8b7e633e2f48185fdfc2ccdb0befc4a0/AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-common:16.0.0] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.0.aar/887eafded2f79e4e7f791ad07e3f0add/AndroidManifest.xml:5:5-6:37
+MERGED from [com.google.firebase:firebase-common:16.0.0] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.0.aar/887eafded2f79e4e7f791ad07e3f0add/AndroidManifest.xml:5:5-6:37
+MERGED from [com.google.android.gms:play-services-flags:15.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/play-services-flags-15.0.1.aar/ab44a47ff6381607d05ba32f70278fce/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-flags:15.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/play-services-flags-15.0.1.aar/ab44a47ff6381607d05ba32f70278fce/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/5e3f348488aeade1f8feaecf7993d00c/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/5e3f348488aeade1f8feaecf7993d00c/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/d6cbbcffe2aaa04c7b12e5ee8ea474ad/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/d6cbbcffe2aaa04c7b12e5ee8ea474ad/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-storage-common:16.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/firebase-storage-common-16.0.1.aar/15b7b5c4ae3219ff52f6c65fdf4ef444/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-storage-common:16.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/firebase-storage-common-16.0.1.aar/15b7b5c4ae3219ff52f6c65fdf4ef444/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-database-collection:15.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/firebase-database-collection-15.0.1.aar/fa504f215cb3e155accf1d5600e71750/AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-database-collection:15.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/firebase-database-collection-15.0.1.aar/fa504f215cb3e155accf1d5600e71750/AndroidManifest.xml:6:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/f3d6ea3e94e17da16fe2536960eef66e/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/f3d6ea3e94e17da16fe2536960eef66e/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/522806cfcd753f7fbb47bb96c85ad2df/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/522806cfcd753f7fbb47bb96c85ad2df/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0-rc02.aar/dba3d0d95f39a9592c02a0d653b81406/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0-rc02.aar/dba3d0d95f39a9592c02a0d653b81406/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0-rc02.aar/ab69a02249606067adcdd0a319100356/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0-rc02.aar/ab69a02249606067adcdd0a319100356/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0-rc02.aar/701d38c9b0c84f8ad63cddf7a2a5eede/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0-rc02.aar/701d38c9b0c84f8ad63cddf7a2a5eede/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0-rc02.aar/4f6a79d2d74d653827461fbd01d90599/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0-rc02.aar/4f6a79d2d74d653827461fbd01d90599/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0-rc02.aar/de0366adf38f813eca79c31535385d86/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0-rc02.aar/de0366adf38f813eca79c31535385d86/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0-rc02.aar/17444eadc0d55c407f9d2126c5c77381/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0-rc02.aar/17444eadc0d55c407f9d2126c5c77381/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0-rc02.aar/145528b9bcd27027a72e3ac22b66e021/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0-rc02.aar/145528b9bcd27027a72e3ac22b66e021/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/loader-28.0.0-rc02.aar/180d8edeee66188fcbead6f3a0439236/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/loader-28.0.0-rc02.aar/180d8edeee66188fcbead6f3a0439236/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0-rc02.aar/89df63902e57d665396e9696eabe492d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0-rc02.aar/89df63902e57d665396e9696eabe492d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0-rc02.aar/f4c2c37ea3f9cc0ea4c55219ace43241/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0-rc02.aar/f4c2c37ea3f9cc0ea4c55219ace43241/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0-rc02.aar/6150cc79615ecc51661735bf92888667/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0-rc02.aar/6150cc79615ecc51661735bf92888667/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0-rc02.aar/649f37685a9bdaac2b1f30c6b8759470/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0-rc02.aar/649f37685a9bdaac2b1f30c6b8759470/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/customview-28.0.0-rc02.aar/48276d0777b9f0288f3f2e6f719b8838/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/customview-28.0.0-rc02.aar/48276d0777b9f0288f3f2e6f719b8838/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0-rc02.aar/6bf9a1f412376b8e1bce121c505ff833/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0-rc02.aar/6bf9a1f412376b8e1bce121c505ff833/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0-rc02.aar/1c94fea943c826cc97c6a199bb2070f9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0-rc02.aar/1c94fea943c826cc97c6a199bb2070f9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/transition-28.0.0-rc02.aar/7449ef04e3b315de2698676bf89d2961/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/transition-28.0.0-rc02.aar/7449ef04e3b315de2698676bf89d2961/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0-rc02.aar/b06020a04cd0d489bb42a2e6e9a04f7f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0-rc02.aar/b06020a04cd0d489bb42a2e6e9a04f7f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-rc02.aar/27f3caa408d97397486e8d40119b56f1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-rc02.aar/27f3caa408d97397486e8d40119b56f1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0-rc02.aar/9cae701b9ee64e995e2e8ba6db7c822f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0-rc02.aar/9cae701b9ee64e995e2e8ba6db7c822f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0-rc02.aar/5991edadd0cd8ec30ac1cbc47e8ca11a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0-rc02.aar/5991edadd0cd8ec30ac1cbc47e8ca11a/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/351d8d8fdb3846d1798e22358480e11d/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/351d8d8fdb3846d1798e22358480e11d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0-rc02.aar/a21558a519bc63b7d7a6682675691d65/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0-rc02.aar/a21558a519bc63b7d7a6682675691d65/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0-rc02.aar/7a04fd661ac79e94684421f681db1e1a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0-rc02.aar/7a04fd661ac79e94684421f681db1e1a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/print-28.0.0-rc02.aar/83faf83fb66338a78ef33b1445943b37/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/print-28.0.0-rc02.aar/83faf83fb66338a78ef33b1445943b37/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/b13ea54df49e823106a88ff43a50beae/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/b13ea54df49e823106a88ff43a50beae/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0-rc02.aar/c1828c8eb05373a1887f5469fbe6ea1d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0-rc02.aar/c1828c8eb05373a1887f5469fbe6ea1d/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/5692490b85cda4aea80aad7b085030e7/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/5692490b85cda4aea80aad7b085030e7/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/909662273f7b4424034ae32772079ae3/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/909662273f7b4424034ae32772079ae3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0-rc02.aar/96e12a55bfb567239e71686320ae7b7b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0-rc02.aar/96e12a55bfb567239e71686320ae7b7b/AndroidManifest.xml:20:5-44
+INJECTED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml
+INJECTED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml
+		ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml
+		ADDED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/carlosrestrepo/Documents/checkinnow/app/src/main/AndroidManifest.xml
+activity#com.google.firebase.auth.internal.FederatedSignInActivity
+ADDED from [com.google.firebase:firebase-auth:16.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.1.aar/28c6fd83c63b939a5232d365bbaf2716/AndroidManifest.xml:23:9-29:75
+	android:excludeFromRecents
+		ADDED from [com.google.firebase:firebase-auth:16.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.1.aar/28c6fd83c63b939a5232d365bbaf2716/AndroidManifest.xml:25:13-46
+	android:launchMode
+		ADDED from [com.google.firebase:firebase-auth:16.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.1.aar/28c6fd83c63b939a5232d365bbaf2716/AndroidManifest.xml:27:13-48
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:16.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.1.aar/28c6fd83c63b939a5232d365bbaf2716/AndroidManifest.xml:26:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-auth:16.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.1.aar/28c6fd83c63b939a5232d365bbaf2716/AndroidManifest.xml:28:13-102
+	android:theme
+		ADDED from [com.google.firebase:firebase-auth:16.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.1.aar/28c6fd83c63b939a5232d365bbaf2716/AndroidManifest.xml:29:13-72
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:16.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.1.aar/28c6fd83c63b939a5232d365bbaf2716/AndroidManifest.xml:24:13-85
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [com.google.firebase:firebase-auth:16.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.1.aar/28c6fd83c63b939a5232d365bbaf2716/AndroidManifest.xml:31:9-35:19
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:16.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.1.aar/28c6fd83c63b939a5232d365bbaf2716/AndroidManifest.xml:31:18-89
+meta-data#com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar
+ADDED from [com.google.firebase:firebase-auth:16.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.1.aar/28c6fd83c63b939a5232d365bbaf2716/AndroidManifest.xml:32:13-34:85
+	android:value
+		ADDED from [com.google.firebase:firebase-auth:16.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.1.aar/28c6fd83c63b939a5232d365bbaf2716/AndroidManifest.xml:34:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:16.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.1.aar/28c6fd83c63b939a5232d365bbaf2716/AndroidManifest.xml:33:17-109
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.gms:play-services-maps:15.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/e34aea9a5be15d048cf66b8a147ff039/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-storage-common:16.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/firebase-storage-common-16.0.1.aar/15b7b5c4ae3219ff52f6c65fdf4ef444/AndroidManifest.xml:7:5-79
+MERGED from [com.google.firebase:firebase-storage-common:16.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/firebase-storage-common-16.0.1.aar/15b7b5c4ae3219ff52f6c65fdf4ef444/AndroidManifest.xml:7:5-79
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:15.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/e34aea9a5be15d048cf66b8a147ff039/AndroidManifest.xml:23:22-76
+uses-permission#android.permission.INTERNET
+ADDED from [com.google.android.gms:play-services-maps:15.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/e34aea9a5be15d048cf66b8a147ff039/AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-database-connection:16.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/firebase-database-connection-16.0.1.aar/8b7e633e2f48185fdfc2ccdb0befc4a0/AndroidManifest.xml:8:5-67
+MERGED from [com.google.firebase:firebase-database-connection:16.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/firebase-database-connection-16.0.1.aar/8b7e633e2f48185fdfc2ccdb0befc4a0/AndroidManifest.xml:8:5-67
+MERGED from [com.google.firebase:firebase-storage-common:16.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/firebase-storage-common-16.0.1.aar/15b7b5c4ae3219ff52f6c65fdf4ef444/AndroidManifest.xml:8:5-67
+MERGED from [com.google.firebase:firebase-storage-common:16.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/firebase-storage-common-16.0.1.aar/15b7b5c4ae3219ff52f6c65fdf4ef444/AndroidManifest.xml:8:5-67
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:15.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/e34aea9a5be15d048cf66b8a147ff039/AndroidManifest.xml:24:22-64
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:15.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/e34aea9a5be15d048cf66b8a147ff039/AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:15.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/e34aea9a5be15d048cf66b8a147ff039/AndroidManifest.xml:27:9-41
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:15.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/e34aea9a5be15d048cf66b8a147ff039/AndroidManifest.xml:28:9-32
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:16.0.0] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.0.aar/887eafded2f79e4e7f791ad07e3f0add/AndroidManifest.xml:9:9-13:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:16.0.0] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.0.aar/887eafded2f79e4e7f791ad07e3f0add/AndroidManifest.xml:11:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:16.0.0] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.0.aar/887eafded2f79e4e7f791ad07e3f0add/AndroidManifest.xml:12:13-37
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:16.0.0] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.0.aar/887eafded2f79e4e7f791ad07e3f0add/AndroidManifest.xml:13:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:16.0.0] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.0.aar/887eafded2f79e4e7f791ad07e3f0add/AndroidManifest.xml:10:13-77
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/5e3f348488aeade1f8feaecf7993d00c/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/5e3f348488aeade1f8feaecf7993d00c/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/5e3f348488aeade1f8feaecf7993d00c/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/5e3f348488aeade1f8feaecf7993d00c/AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:15.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/522806cfcd753f7fbb47bb96c85ad2df/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:15.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/522806cfcd753f7fbb47bb96c85ad2df/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:15.0.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/522806cfcd753f7fbb47bb96c85ad2df/AndroidManifest.xml:24:13-58

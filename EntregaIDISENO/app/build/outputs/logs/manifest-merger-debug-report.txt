@@ -1,0 +1,212 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml:2:1-30:12
+MERGED from [com.android.support:design:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/design-28.0.0-rc02.aar/a17390f889bb2eac2fd580b5169f3e20/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:appcompat-v7:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc02.aar/0daeeab955b29df0292a532e27cfce47/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/41e21fe21d8f6e8a53c82572c81d82d4/AndroidManifest.xml:2:1-11:12
+MERGED from [de.hdodenhof:circleimageview:2.2.0] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/circleimageview-2.2.0.aar/40524c3289e59ab728b674ce5dae3346/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-v4:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0-rc02.aar/e53e0ab336717a45c23d967b29134af9/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0-rc02.aar/ee03f57e024c06b056039dfe31ca3fa7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0-rc02.aar/9fb6e2d429403daabdd87b9751be3b5f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0-rc02.aar/7debf69180621f33bdc23b421f3425ae/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0-rc02.aar/6c0b6a0b6b40c0e64ce453ebd3586b12/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0-rc02.aar/4393242bd6300f0bf8f7b46c448b4fdb/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0-rc02.aar/44b597f117bb67f4e91860fb320c6cf7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/transition-28.0.0-rc02.aar/cc3086b90c83297442b1512c826b25a8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0-rc02.aar/385fa989ca0558da115eacae5f667e89/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/loader-28.0.0-rc02.aar/69b6a5b9b11951024fb9791583264bfb/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0-rc02.aar/64113fadaeecb06d24ea4b6f5eb0f465/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0-rc02.aar/25d28e82a2e6511e28b04f78b9f801db/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0-rc02.aar/68e5b57475882377014bc2ed973c4605/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0-rc02.aar/76bbeb4739fb04d96aa2e16aca4c6a64/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/customview-28.0.0-rc02.aar/6b3343dd78364831470eaa31872e80c0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0-rc02.aar/9fc2206472c7aef1be321d9e03aaf3bc/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0-rc02.aar/6c0bec0931e04ed7e47ee1a77805d842/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-rc02.aar/72f89e0c77e7d82b79bb1742f65a24e1/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0-rc02.aar/b7e2a9e8962f89ef6d8a0bc996a9cf2a/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0-rc02.aar/f9c7cb913310ca862cb77d2d3b9f6933/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0-rc02.aar/42ed8aa610f2946cde5e9913f475f17d/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/460c890fc722b862ba7555de3ccc651e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0-rc02.aar/a96c8ccf20d781cb00c5a913abe6ad12/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0-rc02.aar/6f1455ccbd780d2aa5fa2c5c9d4c8320/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/print-28.0.0-rc02.aar/c548e7d003f77f7b78415d8920dec5b3/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/57bf3f5f104ce9da091699f66a9ec7ed/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0-rc02.aar/b67e565b7972046cdecd1795696b0cd0/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/08aeb80768084b61d8123e1d318b2489/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/cbe7cd2263c9d5188ceacc8589fa7f8e/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml:2:1-30:12
+	package
+		ADDED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml:3:5-53
+		INJECTED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml
+		ADDED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml:2:1-30:12
+		INJECTED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml
+		ADDED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml:2:1-30:12
+		INJECTED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml:2:11-69
+application
+ADDED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml:5:5-28:19
+MERGED from [com.android.support:design:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/design-28.0.0-rc02.aar/a17390f889bb2eac2fd580b5169f3e20/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/design-28.0.0-rc02.aar/a17390f889bb2eac2fd580b5169f3e20/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/41e21fe21d8f6e8a53c82572c81d82d4/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/41e21fe21d8f6e8a53c82572c81d82d4/AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:2.2.0] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/circleimageview-2.2.0.aar/40524c3289e59ab728b674ce5dae3346/AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:2.2.0] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/circleimageview-2.2.0.aar/40524c3289e59ab728b674ce5dae3346/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-rc02.aar/72f89e0c77e7d82b79bb1742f65a24e1/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-rc02.aar/72f89e0c77e7d82b79bb1742f65a24e1/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0-rc02.aar/b7e2a9e8962f89ef6d8a0bc996a9cf2a/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0-rc02.aar/b7e2a9e8962f89ef6d8a0bc996a9cf2a/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-rc02.aar/72f89e0c77e7d82b79bb1742f65a24e1/AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml:8:9-41
+	android:roundIcon
+		ADDED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml:11:9-40
+activity#com.example.carlosrestrepo.entregaicm1.MainActivity
+ADDED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml:12:9-18:20
+	android:name
+		ADDED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml:12:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml:13:13-17:29
+action#android.intent.action.MAIN
+ADDED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml:14:17-69
+	android:name
+		ADDED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml:14:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml:16:17-77
+	android:name
+		ADDED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml:16:27-74
+activity#com.example.carlosrestrepo.entregaicm1.LoginActivity
+ADDED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml:19:9-51
+	android:name
+		ADDED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml:19:19-48
+activity#com.example.carlosrestrepo.entregaicm1.CrearUsuario.CrearUsuarioActivity
+ADDED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml:20:9-71
+	android:name
+		ADDED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml:20:19-68
+activity#com.example.carlosrestrepo.entregaicm1.SesionActivity
+ADDED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml:21:9-52
+	android:name
+		ADDED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml:21:19-49
+activity#com.example.carlosrestrepo.entregaicm1.PerfilActivity
+ADDED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml:22:9-52
+	android:name
+		ADDED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml:22:19-49
+activity#com.example.carlosrestrepo.entregaicm1.Perfil2Activity
+ADDED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml:23:9-53
+	android:name
+		ADDED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml:23:19-50
+activity#com.example.carlosrestrepo.entregaicm1.BuscarActivity
+ADDED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml:24:9-52
+	android:name
+		ADDED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml:24:19-49
+activity#com.example.carlosrestrepo.entregaicm1.Buscar2Activity
+ADDED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml:25:9-53
+	android:name
+		ADDED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml:25:19-50
+activity#com.example.carlosrestrepo.entregaicm1.ReservasActivity
+ADDED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml:26:9-54
+	android:name
+		ADDED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml:26:19-51
+activity#com.example.carlosrestrepo.entregaicm1.CalificacionActivity
+ADDED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml:27:9-67
+	android:name
+		ADDED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml:27:19-55
+uses-sdk
+INJECTED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml
+INJECTED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:design:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/design-28.0.0-rc02.aar/a17390f889bb2eac2fd580b5169f3e20/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/design-28.0.0-rc02.aar/a17390f889bb2eac2fd580b5169f3e20/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc02.aar/0daeeab955b29df0292a532e27cfce47/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc02.aar/0daeeab955b29df0292a532e27cfce47/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/41e21fe21d8f6e8a53c82572c81d82d4/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/41e21fe21d8f6e8a53c82572c81d82d4/AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:2.2.0] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/circleimageview-2.2.0.aar/40524c3289e59ab728b674ce5dae3346/AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:2.2.0] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/circleimageview-2.2.0.aar/40524c3289e59ab728b674ce5dae3346/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-v4:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0-rc02.aar/e53e0ab336717a45c23d967b29134af9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0-rc02.aar/e53e0ab336717a45c23d967b29134af9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0-rc02.aar/ee03f57e024c06b056039dfe31ca3fa7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0-rc02.aar/ee03f57e024c06b056039dfe31ca3fa7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0-rc02.aar/9fb6e2d429403daabdd87b9751be3b5f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0-rc02.aar/9fb6e2d429403daabdd87b9751be3b5f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0-rc02.aar/7debf69180621f33bdc23b421f3425ae/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0-rc02.aar/7debf69180621f33bdc23b421f3425ae/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0-rc02.aar/6c0b6a0b6b40c0e64ce453ebd3586b12/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0-rc02.aar/6c0b6a0b6b40c0e64ce453ebd3586b12/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0-rc02.aar/4393242bd6300f0bf8f7b46c448b4fdb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0-rc02.aar/4393242bd6300f0bf8f7b46c448b4fdb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0-rc02.aar/44b597f117bb67f4e91860fb320c6cf7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0-rc02.aar/44b597f117bb67f4e91860fb320c6cf7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/transition-28.0.0-rc02.aar/cc3086b90c83297442b1512c826b25a8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/transition-28.0.0-rc02.aar/cc3086b90c83297442b1512c826b25a8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0-rc02.aar/385fa989ca0558da115eacae5f667e89/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0-rc02.aar/385fa989ca0558da115eacae5f667e89/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/loader-28.0.0-rc02.aar/69b6a5b9b11951024fb9791583264bfb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/loader-28.0.0-rc02.aar/69b6a5b9b11951024fb9791583264bfb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0-rc02.aar/64113fadaeecb06d24ea4b6f5eb0f465/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0-rc02.aar/64113fadaeecb06d24ea4b6f5eb0f465/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0-rc02.aar/25d28e82a2e6511e28b04f78b9f801db/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0-rc02.aar/25d28e82a2e6511e28b04f78b9f801db/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0-rc02.aar/68e5b57475882377014bc2ed973c4605/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0-rc02.aar/68e5b57475882377014bc2ed973c4605/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0-rc02.aar/76bbeb4739fb04d96aa2e16aca4c6a64/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0-rc02.aar/76bbeb4739fb04d96aa2e16aca4c6a64/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/customview-28.0.0-rc02.aar/6b3343dd78364831470eaa31872e80c0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/customview-28.0.0-rc02.aar/6b3343dd78364831470eaa31872e80c0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0-rc02.aar/9fc2206472c7aef1be321d9e03aaf3bc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0-rc02.aar/9fc2206472c7aef1be321d9e03aaf3bc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0-rc02.aar/6c0bec0931e04ed7e47ee1a77805d842/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0-rc02.aar/6c0bec0931e04ed7e47ee1a77805d842/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-rc02.aar/72f89e0c77e7d82b79bb1742f65a24e1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-rc02.aar/72f89e0c77e7d82b79bb1742f65a24e1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0-rc02.aar/b7e2a9e8962f89ef6d8a0bc996a9cf2a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0-rc02.aar/b7e2a9e8962f89ef6d8a0bc996a9cf2a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0-rc02.aar/f9c7cb913310ca862cb77d2d3b9f6933/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0-rc02.aar/f9c7cb913310ca862cb77d2d3b9f6933/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0-rc02.aar/42ed8aa610f2946cde5e9913f475f17d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0-rc02.aar/42ed8aa610f2946cde5e9913f475f17d/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/460c890fc722b862ba7555de3ccc651e/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/460c890fc722b862ba7555de3ccc651e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0-rc02.aar/a96c8ccf20d781cb00c5a913abe6ad12/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0-rc02.aar/a96c8ccf20d781cb00c5a913abe6ad12/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0-rc02.aar/6f1455ccbd780d2aa5fa2c5c9d4c8320/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0-rc02.aar/6f1455ccbd780d2aa5fa2c5c9d4c8320/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/print-28.0.0-rc02.aar/c548e7d003f77f7b78415d8920dec5b3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/print-28.0.0-rc02.aar/c548e7d003f77f7b78415d8920dec5b3/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/57bf3f5f104ce9da091699f66a9ec7ed/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/57bf3f5f104ce9da091699f66a9ec7ed/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0-rc02.aar/b67e565b7972046cdecd1795696b0cd0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0-rc02] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0-rc02.aar/b67e565b7972046cdecd1795696b0cd0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/08aeb80768084b61d8123e1d318b2489/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/08aeb80768084b61d8123e1d318b2489/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/cbe7cd2263c9d5188ceacc8589fa7f8e/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/carlosrestrepo/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/cbe7cd2263c9d5188ceacc8589fa7f8e/AndroidManifest.xml:20:5-44
+INJECTED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml
+INJECTED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml
+		ADDED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml
+		ADDED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/carlosrestrepo/Documents/CARMACARMA/EntregaICM1/app/src/main/AndroidManifest.xml
