@@ -2,9 +2,10 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SesionActivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SesionActivity">
+    >
 
     
 
@@ -66,6 +67,7 @@
             android:textSize="10dp"/>
     </RelativeLayout>
     <LinearLayout
+
         android:id="@+id/BarraBotones"
         android:layout_width="350dp"
         android:layout_height="80dp"
