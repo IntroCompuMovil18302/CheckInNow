@@ -1,9 +1,10 @@
 package com.checkinnow.checkinnow.Huesped;
 
 import android.annotation.TargetApi;
-import android.app.Activity;
 import android.app.DatePickerDialog;
 import android.app.Fragment;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
@@ -44,9 +45,11 @@ import java.util.Calendar;
 import java.util.List;
 
 import Modelo.LugarClass;
+import Modelo.Reserva;
 
 import static Modelo.ContantesClass.PATHLUGARES;
 import static Modelo.ContantesClass.TAG;
+import static Modelo.ContantesClass.Uid;
 
 
 public class mapconsulFragment extends Fragment implements OnMapReadyCallback {
@@ -67,6 +70,7 @@ public class mapconsulFragment extends Fragment implements OnMapReadyCallback {
     private GoogleMap mMap;
     private Marker lastmarker;
     private List<Marker> puestos;
+    private List<LugarClass> lugares;
     private SupportMapFragment mapFragment;
     private EditText origen;
     private EditText fin;
@@ -77,6 +81,7 @@ public class mapconsulFragment extends Fragment implements OnMapReadyCallback {
         // Required empty public constructor
         database = FirebaseDatabase.getInstance();
         puestos = new ArrayList<Marker>();
+        lugares = new ArrayList<LugarClass>();
     }
 
 
@@ -109,6 +114,7 @@ public class mapconsulFragment extends Fragment implements OnMapReadyCallback {
                 obtenerFecha(fin);
             }
         });
+
 
         botonseleccion.setOnClickListener(new View.OnClickListener() {
             @TargetApi(Build.VERSION_CODES.O)
@@ -147,23 +153,32 @@ public class mapconsulFragment extends Fragment implements OnMapReadyCallback {
     }
 
     @RequiresApi(api = Build.VERSION_CODES.M)
-    public void regresar() {
+    public void irinfo(Marker marker) {
         if (lastmarker != null) {
 
             Intent intento = new Intent();
             Bundle bundle = new Bundle();
 
-            bundle.putDouble("lat", lastmarker.getPosition().latitude);
-            bundle.putDouble("long", lastmarker.getPosition().longitude);
+            for (LugarClass lug : lugares) {
+                if (marker.getPosition().latitude == lug.getLatitude() &&
+                        marker.getPosition().longitude == lug.getLongitud()) {
+                    bundle.putSerializable("LUGAR", lug);
+                    Reserva reserva = new Reserva(lug.getID(),Uid,origen.getText().toString(),fin.getText().toString());
+                    bundle.putSerializable("RESERVA",reserva);
+                    intento.putExtra("bundle", bundle);
 
-            intento.putExtra("bundle", bundle);
+                    FragmentManager fm = getFragmentManager();
+                    FragmentTransaction ft =  fm.beginTransaction();
+                    ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
+                    infolugarReservaFragment fragment2 = new infolugarReservaFragment();
+                    fragment2.setArguments(bundle);
+                    ft.replace(R.id.frameDinamico, fragment2);
+                    ft.addToBackStack(null);
+                    ft.commit();
 
-            getTargetFragment().onActivityResult(
-                    getTargetRequestCode(),
-                    Activity.RESULT_OK,
-                    intento
-            );
-            getFragmentManager().popBackStack();
+                }
+            }
+
 
         } else {
             Toast toast = Toast.makeText(getContext(), "No a seleccionado ningún punto aun.", Toast.LENGTH_SHORT);
@@ -225,6 +240,16 @@ public class mapconsulFragment extends Fragment implements OnMapReadyCallback {
 
         lastmarker.remove();
 
+        mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.M)
+            @Override
+            public boolean onMarkerClick(Marker marker) {
+
+                irinfo(marker);
+                return true;
+            }
+        });
+
 
         mMap.setOnMapLongClickListener(new GoogleMap.OnMapLongClickListener() {
             @Override
@@ -237,12 +262,11 @@ public class mapconsulFragment extends Fragment implements OnMapReadyCallback {
     }
 
     private void seleccion(LatLng latLng) {
-        if (lastmarker != null ) {
+        if (lastmarker != null) {
             lastmarker.remove();
 
         }
-        if (lascircle != null)
-        {
+        if (lascircle != null) {
             lascircle.remove();
             for (Marker mark : puestos) {
                 mark.remove();
@@ -272,19 +296,15 @@ public class mapconsulFragment extends Fragment implements OnMapReadyCallback {
                     LugarClass lug = singleSnapshot.getValue(LugarClass.class);
                     Log.i(TAG, "LUGAR:\n " + lug.toString());
                     double dist;
-                    dist=distancepoint(latLng.latitude, latLng.longitude, lug.getLatitude(), lug.getLongitud()) ;
+                    dist = distancepoint(latLng.latitude, latLng.longitude, lug.getLatitude(), lug.getLongitud());
                     Log.i(TAG, "LU...........GAR:\n " + dist);
                     if (dist < 2) {
                         Marker mark;
                         LatLng lugartemp = new LatLng(lug.getLatitude(), lug.getLongitud());
                         mark = mMap.addMarker(new MarkerOptions().position(lugartemp).title(lug.getNombre()).icon(BitmapDescriptorFactory.fromResource(R.drawable.placeholder322)));
                         puestos.add(mark);
+                        lugares.add(lug);
                     }
-
-
-                    //String name = myUser.getName();
-                    //int age = myUser.getAge();
-                    //Toast.makeText(this, name + ":" + age, Toast.LENGTH_SHORT).show();
                 }
             }
 

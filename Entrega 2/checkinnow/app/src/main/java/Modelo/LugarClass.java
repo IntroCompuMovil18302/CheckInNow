@@ -1,9 +1,10 @@
 package Modelo;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LugarClass {
+public class LugarClass implements Serializable {
 
     private double latitude;
     private double longitud;

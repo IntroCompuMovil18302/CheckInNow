@@ -3,6 +3,7 @@ package com.checkinnow.checkinnow.Anfitrion;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,12 +13,18 @@ import com.checkinnow.checkinnow.Huesped.mapconsulFragment;
 import com.checkinnow.checkinnow.R;
 import com.checkinnow.checkinnow.SesionIniciada.Gmap2Fragment;
 
+import Modelo.LugarClass;
+import Modelo.Reserva;
+
+import static Modelo.ContantesClass.TAG;
+
 public class MenuAnfitrionFragment extends Fragment {
 
     private Button botonagregaractividad;
     private Button botonverlugares;
     private Button punto1;
     private Button punto2;
+
 
 
     public MenuAnfitrionFragment() {
@@ -27,6 +34,7 @@ public class MenuAnfitrionFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
     }
 
     @Override
@@ -66,7 +74,7 @@ public class MenuAnfitrionFragment extends Fragment {
     private void consultamapa() {
 
         android.app.FragmentManager fm = getFragmentManager();
-        fm.beginTransaction().replace(R.id.frameDinamico, new mapconsulFragment()).addToBackStack("agregarFragverlugar").commit();
+        fm.beginTransaction().replace(R.id.frameDinamico, new mapconsulFragment()).addToBackStack("agregarFragverconsulmapa").commit();
 
     }
 
