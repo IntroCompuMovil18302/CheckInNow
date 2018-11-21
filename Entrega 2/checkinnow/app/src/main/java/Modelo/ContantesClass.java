@@ -5,6 +5,9 @@ public class ContantesClass {
     public static final String PATHANFITRIONSTORAGEinicio = "anfitrion/";
     public static final String PATHLUGARES = "lugares/";
     public static final String PATHANFITRIONSTORAGEfin = "/lugares/";
+    public static final String PATHRESERVAS= "reservas/";
+    public static final String PATHRESERVASUSERINIT= "users/";
+    public static final String PATHRESERVASUSERFINAL= "/";
     public static String Uid;
     public static final String PATHLUGARESANFITRIONinicio = "anfitrion/";
     public static final String PATHLUGARESANFITRIONfin = "/";

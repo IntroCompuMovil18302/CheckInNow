@@ -42,7 +42,12 @@ import java.util.List;
 import Modelo.LugarClass;
 import Modelo.Reserva;
 
+import static Modelo.ContantesClass.PATHLUGARES;
+import static Modelo.ContantesClass.PATHRESERVAS;
+import static Modelo.ContantesClass.PATHRESERVASUSERFINAL;
+import static Modelo.ContantesClass.PATHRESERVASUSERINIT;
 import static Modelo.ContantesClass.TAG;
+import static Modelo.ContantesClass.Uid;
 
 public class infolugarReservaFragment extends Fragment implements OnMapReadyCallback {
 
@@ -52,7 +57,7 @@ public class infolugarReservaFragment extends Fragment implements OnMapReadyCall
     View v;
     //File localfile;
     List<File> files;
-    Button botonseleccion;
+    Button botonreserva;
     private FirebaseDatabase database;
     private DatabaseReference myRef;
     private StorageReference mStorageRef;
@@ -80,11 +85,14 @@ public class infolugarReservaFragment extends Fragment implements OnMapReadyCall
     private TextView val;
     private TextView de;
     private TextView a;
+    private String key;
 
     public infolugarReservaFragment() {
         // Required empty public constructor
         database = FirebaseDatabase.getInstance();
         mStorageRef = FirebaseStorage.getInstance().getReference();
+        myRef = database.getReference( PATHRESERVAS );
+        this.key = myRef.push().getKey();
     }
 
     @Override
@@ -131,8 +139,7 @@ public class infolugarReservaFragment extends Fragment implements OnMapReadyCall
         unic2 = v.findViewById(R.id.unica2);
         unic3 = v.findViewById(R.id.unica3);
         unic4 = v.findViewById(R.id.unica4);
-        container = (LinearLayout) v.findViewById(R.id.imagescontainer);
-
+        botonreserva = v.findViewById(R.id.buttonReservar);
 
 
         loadinfo();
@@ -143,7 +150,27 @@ public class infolugarReservaFragment extends Fragment implements OnMapReadyCall
                 atras();
             }
         });
+
+        botonreserva.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                reservar();
+            }
+        });
         return v;
+    }
+
+    private void reservar() {
+
+
+
+        myRef = database.getReference(PATHRESERVAS + this.key );
+        myRef.setValue(reserva);
+
+        myRef = database.getReference(PATHRESERVASUSERINIT+Uid+PATHRESERVASUSERFINAL+key);
+        myRef.setValue(reserva);
+        getFragmentManager().popBackStack();
+
     }
 
 
@@ -233,7 +260,6 @@ public class infolugarReservaFragment extends Fragment implements OnMapReadyCall
         if (files.get(2).exists()) {
             BitmapFactory.Options options = new BitmapFactory.Options();
             options.inSampleSize = 2;
-            Log.i("LALALLA",files.get(2).getPath());
             Bitmap myBitmap = BitmapFactory.decodeFile(files.get(2).getPath(), options);
             unic3.setImageBitmap(myBitmap);
         } else {
@@ -242,7 +268,7 @@ public class infolugarReservaFragment extends Fragment implements OnMapReadyCall
         if (files.get(3).exists()) {
             BitmapFactory.Options options = new BitmapFactory.Options();
             options.inSampleSize =2;
-            Log.i("LALALLA",files.get(3).getPath());
+
             Bitmap myBitmap = BitmapFactory.decodeFile(files.get(3).getPath(), options);
             unic4.setImageBitmap(myBitmap);
         } else {
