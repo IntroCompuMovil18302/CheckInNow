@@ -40,7 +40,7 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/Logo"
+        android:id="@+id/tittle"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_width="300dp"
@@ -106,6 +106,20 @@
         android:background="@drawable/botonplano"
         android:fontFamily="@font/juiceline"
         android:text="PUNTO 2 HUESPED"
+        android:textColor="@color/primary_light"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/punto3"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/verbutton"
+        android:layout_alignStart="@+id/Agregarbutton"
+        android:layout_marginStart="-58dp"
+        android:layout_marginTop="91dp"
+        android:background="@drawable/botonplano"
+        android:fontFamily="@font/juiceline"
+        android:text="ver e ir"
         android:textColor="@color/primary_light"
         android:textSize="15dp" />
 

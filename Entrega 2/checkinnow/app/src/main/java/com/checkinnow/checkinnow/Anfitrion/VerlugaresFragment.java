@@ -1,12 +1,9 @@
 package com.checkinnow.checkinnow.Anfitrion;
 
-import android.annotation.TargetApi;
 import android.app.DatePickerDialog;
 import android.app.Fragment;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.support.annotation.RequiresApi;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -78,7 +75,7 @@ public class VerlugaresFragment extends Fragment implements DatePickerDialog.OnD
 
         v = inflater.inflate(R.layout.fragment_verlugares, container, false);
 
-        list = (ListView) v.findViewById(R.id.Lugareslistview);
+        list = (ListView) v.findViewById(R.id.Reservaslistview);
 
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

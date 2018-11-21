@@ -14,7 +14,7 @@
         android:src="@drawable/ringbell" />
 
     <ImageView
-        android:id="@+id/Logo"
+        android:id="@+id/tittle"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -27,7 +27,7 @@
         android:id="@+id/BarraBotones"
         android:layout_width="350dp"
         android:layout_height="80dp"
-        android:layout_below="@+id/Logo"
+        android:layout_below="@+id/tittle"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="#B3E5FC">

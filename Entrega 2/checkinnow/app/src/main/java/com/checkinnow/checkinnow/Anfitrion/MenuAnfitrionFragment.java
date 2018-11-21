@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.checkinnow.checkinnow.Huesped.VesreservasFragment;
 import com.checkinnow.checkinnow.Huesped.mapconsulFragment;
 import com.checkinnow.checkinnow.R;
 import com.checkinnow.checkinnow.SesionIniciada.Gmap2Fragment;
@@ -24,6 +25,7 @@ public class MenuAnfitrionFragment extends Fragment {
     private Button botonverlugares;
     private Button punto1;
     private Button punto2;
+    private Button punto3;
 
 
 
@@ -46,11 +48,18 @@ public class MenuAnfitrionFragment extends Fragment {
         botonverlugares = (Button) v.findViewById(R.id.verbutton);
         punto1 = (Button) v.findViewById(R.id.punto1);
         punto2 = (Button) v.findViewById(R.id.punto2);
+        punto3 = (Button) v.findViewById(R.id.punto3);
 
         punto2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 consultamapa();
+            }
+        });
+        punto3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                verreservas();
             }
         });
 
@@ -69,6 +78,11 @@ public class MenuAnfitrionFragment extends Fragment {
         });
 
         return v;
+    }
+
+    private void verreservas() {
+        android.app.FragmentManager fm = getFragmentManager();
+        fm.beginTransaction().replace(R.id.frameDinamico, new VesreservasFragment()).addToBackStack("verreservas").commit();
     }
 
     private void consultamapa() {

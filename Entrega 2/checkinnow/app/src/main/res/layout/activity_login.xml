@@ -10,7 +10,7 @@
 
 
     <TextView
-        android:id="@+id/Logo"
+        android:id="@+id/tittle"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_width="300dp"
@@ -27,7 +27,7 @@
         android:layout_width="300dp"
         android:layout_height="250dp"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/Logo"
+        android:layout_below="@id/tittle"
         android:layout_marginTop="80dp"
         android:background="@drawable/curvos"
         >

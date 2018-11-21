@@ -162,11 +162,8 @@ public class infolugarReservaFragment extends Fragment implements OnMapReadyCall
 
     private void reservar() {
 
-
-
         myRef = database.getReference(PATHRESERVAS + this.key );
         myRef.setValue(reserva);
-
         myRef = database.getReference(PATHRESERVASUSERINIT+Uid+PATHRESERVASUSERFINAL+key);
         myRef.setValue(reserva);
         getFragmentManager().popBackStack();

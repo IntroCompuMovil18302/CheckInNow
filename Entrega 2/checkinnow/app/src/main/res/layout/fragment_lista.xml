@@ -20,7 +20,7 @@
 
 
         <TextView
-            android:id="@+id/Logo"
+            android:id="@+id/tittle"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_width="300dp"

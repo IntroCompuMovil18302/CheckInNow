@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Anfitrion.VerlugaresFragment">
+    tools:context=".Huesped.VesreservasFragment">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -64,18 +64,32 @@
                 android:layout_marginTop="5dp"
                 android:fontFamily="@font/oestrogen"
                 android:gravity="center"
-                android:text="Estos son los lugares que estan publicados"
+                android:text="Tus reservas"
                 android:textColor="@color/primary_text"
                 android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tittle"
+                android:layout_alignStart="@+id/Reservaslistview"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.5"
+                android:fontFamily="@font/enagol"
+                android:text="Seleccione uno para ir."
+                android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="15dp" />
 
             <ListView
                 android:id="@+id/Reservaslistview"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_below="@+id/tittle"
+                android:layout_below="@+id/textView15"
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginBottom="0dp">
 
             </ListView>

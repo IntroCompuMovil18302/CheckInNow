@@ -15,6 +15,10 @@ public class Reserva implements Serializable {
         this.fechafin = fechafin;
     }
 
+    public Reserva() {
+
+    }
+
     @Override
     public String toString() {
         return "Reserva{" +
