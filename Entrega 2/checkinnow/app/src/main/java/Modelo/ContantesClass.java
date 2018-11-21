@@ -3,6 +3,7 @@ package Modelo;
 public class ContantesClass {
 
     public static final String PATHANFITRIONSTORAGEinicio = "anfitrion/";
+    public static final String PATHLUGARES = "lugares/";
     public static final String PATHANFITRIONSTORAGEfin = "/lugares/";
     public static String Uid;
     public static final String PATHLUGARESANFITRIONinicio = "anfitrion/";

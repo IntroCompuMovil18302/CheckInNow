@@ -41,6 +41,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
+import java.security.Key;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -51,6 +52,7 @@ import Modelo.LugarClass;
 
 import static Modelo.ContantesClass.PATHANFITRIONSTORAGEfin;
 import static Modelo.ContantesClass.PATHANFITRIONSTORAGEinicio;
+import static Modelo.ContantesClass.PATHLUGARES;
 import static Modelo.ContantesClass.PATHLUGARESANFITRIONfin;
 import static Modelo.ContantesClass.PATHLUGARESANFITRIONinicio;
 import static Modelo.ContantesClass.REQUEST_IMAGE_CAPTURE;
@@ -470,6 +472,8 @@ public class AgregarLugarFragment extends Fragment {
                     for (Uri uri : this.uris) {
                         agregarStorage(uri);
                     }
+                    myRef = database.getReference(PATHLUGARES+key);
+                    myRef.setValue(lugar);
                     getFragmentManager().popBackStack();
 
                 } else {
