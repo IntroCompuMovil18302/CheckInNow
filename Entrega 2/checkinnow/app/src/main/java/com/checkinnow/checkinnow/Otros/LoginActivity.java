@@ -25,6 +25,8 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+import Modelo.ContantesClass;
+
 public class LoginActivity extends AppCompatActivity {
 
 
@@ -131,6 +133,8 @@ public class LoginActivity extends AppCompatActivity {
                             if (task.isSuccessful()) {
                                 Log.d("INICIO",
                                         "signInWithEmail:onComplete:" + task.isSuccessful());
+                                FirebaseUser user = mAuth.getCurrentUser();
+                                ContantesClass.Uid=user.getUid();
                                 Intent Crear = new Intent(LoginActivity.this, NavdraweActivity.class);
                                 Crear.putExtra("email",email);
                                 startActivity(Crear);

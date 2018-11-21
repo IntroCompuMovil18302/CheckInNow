@@ -30,5 +30,31 @@
 
     <string name="botonagregarlocacion">Agregar lugar</string>
 
+    <string-array name="tiposlugares">
+        <item>Casa</item>
+        <item>Departamento</item>
+        <item>Bed and breakfast</item>
+        <item>Hotel boutique</item>
+        <item>Bungalow</item>
+        <item>Cabaña</item>
+        <item>Casa adosada</item>
+        <item>Casa de campo</item>
+        <item>Chalet</item>
+        <item>Complejo turístico</item>
+        <item>Dormitorio para invitados</item>
+        <item>Hostal</item>
+        <item>Hostería</item>
+        <item>Hotel</item>
+        <item>Loft</item>
+        <item>Villa</item>
+    </string-array>
+
+    <string-array name="monedas">
+        <item>COP</item>
+        <item>USD</item>
+        <item>GBP</item>
+    </string-array>
+
+
 
 </resources>

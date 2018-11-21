@@ -3,7 +3,6 @@ package com.checkinnow.checkinnow.Anfitrion;
 import android.Manifest;
 import android.app.Activity;
 import android.app.Fragment;
-import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
@@ -24,6 +23,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Spinner;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -48,10 +49,13 @@ import java.util.List;
 import Modelo.ContantesClass;
 import Modelo.LugarClass;
 
-import static Modelo.ContantesClass.PATHANFITRIONSTORAGE;
-import static Modelo.ContantesClass.PATHLUGARESANFITRION;
+import static Modelo.ContantesClass.PATHANFITRIONSTORAGEfin;
+import static Modelo.ContantesClass.PATHANFITRIONSTORAGEinicio;
+import static Modelo.ContantesClass.PATHLUGARESANFITRIONfin;
+import static Modelo.ContantesClass.PATHLUGARESANFITRIONinicio;
 import static Modelo.ContantesClass.REQUEST_IMAGE_CAPTURE;
 import static Modelo.ContantesClass.TAG;
+import static Modelo.ContantesClass.Uid;
 import static android.app.Activity.RESULT_OK;
 
 
@@ -62,8 +66,23 @@ public class AgregarLugarFragment extends Fragment {
     BitmapFactory.Options options;
     private Button ubicacion;
     private Button gale;
+    private Button menoshab;
+    private Button menosban;
+    private Button menoscam;
+    private Button mashab;
+    private Button masban;
+    private Button mascam;
+
     private EditText nombre;
-    private EditText tipo;
+    private Spinner tipo;
+    private Spinner moneda;
+    private EditText habitaciones;
+    private EditText camas;
+    private EditText banos;
+    private Switch estaciona;
+    private Switch mascota;
+
+
     private EditText valor;
     private Button agregar;
     private Button foto;
@@ -86,7 +105,7 @@ public class AgregarLugarFragment extends Fragment {
         lugar = new LugarClass();
         database = FirebaseDatabase.getInstance();
         mStorageRef = FirebaseStorage.getInstance().getReference();
-        myRef = database.getReference(PATHANFITRIONSTORAGE);
+        myRef = database.getReference(PATHANFITRIONSTORAGEinicio + Uid + PATHANFITRIONSTORAGEfin);
         this.key = myRef.push().getKey();
 
     }
@@ -97,7 +116,23 @@ public class AgregarLugarFragment extends Fragment {
 
         v = inflater.inflate(R.layout.fragment_agregar_lugar, container, false);
 
-        tipo = v.findViewById(R.id.editTextTipo);
+        //tipo = v.findViewById(R.id.editTextTipo);
+
+        tipo = v.findViewById(R.id.spinnertipo);
+        moneda = v.findViewById(R.id.spinnermoneda);
+        habitaciones = v.findViewById(R.id.editTexthab);
+        camas = v.findViewById(R.id.editTextcamas);
+        banos = v.findViewById(R.id.editTextbanos);
+        estaciona = v.findViewById(R.id.estacionamiento);
+        mascota = v.findViewById(R.id.mascotas);
+
+        menoshab = v.findViewById(R.id.menoshab);
+        menosban = v.findViewById(R.id.menosban);
+        menoscam = v.findViewById(R.id.menoscam);
+        mashab = v.findViewById(R.id.mashab);
+        masban = v.findViewById(R.id.masban);
+        mascam = v.findViewById(R.id.mascam);
+
         nombre = v.findViewById(R.id.editTextnombre);
         valor = v.findViewById(R.id.editTextValor);
         ubicacion = v.findViewById(R.id.buttonUbicion);
@@ -106,12 +141,53 @@ public class AgregarLugarFragment extends Fragment {
         agregar = v.findViewById(R.id.buttonAgregar);
         image1 = v.findViewById(R.id.imagegal);
         image2 = v.findViewById(R.id.imagecam);
-        Log.i("TESTING", "11111111");
         requestPermission(getActivity(), Manifest.permission.READ_EXTERNAL_STORAGE,
                 "Se necesita acceder al almacenamiento", ContantesClass.READ_EXTERNAL_STORAGE2);
 
         requestPermission(getActivity(), Manifest.permission.CAMERA,
                 "Se necesita acceder a la camara", REQUEST_IMAGE_CAPTURE);
+
+        menosban.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                disminuir(banos);
+            }
+        });
+
+        menoshab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                disminuir(habitaciones);
+            }
+        });
+
+        menoscam.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                disminuir(camas);
+            }
+        });
+
+        masban.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                aumentar(banos);
+            }
+        });
+
+        mashab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                aumentar(habitaciones);
+            }
+        });
+
+        mascam.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                aumentar(camas);
+            }
+        });
 
         agregar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -143,6 +219,20 @@ public class AgregarLugarFragment extends Fragment {
 
 
         return v;
+    }
+
+    private void disminuir(EditText text) {
+
+        if (Integer.parseInt(text.getText().toString()) - 1 >= 1) {
+            text.setText(String.valueOf(Integer.parseInt(text.getText().toString()) - 1));
+        } else {
+            Toast.makeText(v.getContext(), "Debe ser mayor a 1", Toast.LENGTH_SHORT).show();
+        }
+
+    }
+
+    private void aumentar(EditText text) {
+        text.setText(String.valueOf(Integer.parseInt(text.getText().toString()) + 1));
     }
     ////////////////////////////////////////LANZAR MAPA/////////////////////////////////////////////////////////////////
 
@@ -325,7 +415,7 @@ public class AgregarLugarFragment extends Fragment {
     /////////////////////////////////////////STORAGE////////////////////////////////////////////////////////////////
 
     private void agregarStorage(Uri uri) {
-        StorageReference mRef = mStorageRef.child(PATHANFITRIONSTORAGE).child(key).child(uri.getLastPathSegment());
+        StorageReference mRef = mStorageRef.child(PATHANFITRIONSTORAGEinicio + Uid + PATHANFITRIONSTORAGEfin).child(key).child(uri.getLastPathSegment());
 
         mRef.putFile(uri)
                 .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
@@ -353,13 +443,20 @@ public class AgregarLugarFragment extends Fragment {
 
                     //LugarClass lugar = new LugarClass();
                     lugar.setNombre(nombre.getText().toString());
-                    lugar.setTipo(tipo.getText().toString());
+                    lugar.setTipo(tipo.getSelectedItem().toString());
+                    lugar.setMoneda(moneda.getSelectedItem().toString());
+                    //lugar.setTipo(tipo.getText().toString());
                     lugar.setValor(Double.valueOf(valor.getText().toString()));
-                    lugar.setPath(PATHANFITRIONSTORAGE + key);
+                    lugar.setPath(PATHANFITRIONSTORAGEinicio + Uid + PATHANFITRIONSTORAGEfin + key);
                     Log.i(TAG, lugar.toString());
                     lugar.setLatitude(this.lati);
                     lugar.setLongitud(this.longi);
                     lugar.setID(this.key);
+                    lugar.setHabitaciones(Integer.parseInt(habitaciones.getText().toString()));
+                    lugar.setCamas(Integer.parseInt(camas.getText().toString()));
+                    lugar.setBanos(Integer.parseInt(banos.getText().toString()));
+                    lugar.setEstacionamiento(estaciona.isChecked());
+                    lugar.setMascota(mascota.isChecked());
 
                     for (Uri uri : this.uris) {
                         lugar.getNombreimagenes().add(uri.getLastPathSegment());
@@ -368,7 +465,7 @@ public class AgregarLugarFragment extends Fragment {
                     Log.i(TAG, "FINAL" + lugar.toString());
 
 
-                    myRef = database.getReference(PATHLUGARESANFITRION + key);
+                    myRef = database.getReference(PATHLUGARESANFITRIONinicio + Uid + PATHLUGARESANFITRIONfin + key);
                     myRef.setValue(lugar);
                     for (Uri uri : this.uris) {
                         agregarStorage(uri);
@@ -398,13 +495,6 @@ public class AgregarLugarFragment extends Fragment {
             nombre.setError(null);
         }
 
-        String tipe = tipo.getText().toString();
-        if (TextUtils.isEmpty(tipe)) {
-            tipo.setError("Requerido");
-            valid = false;
-        } else {
-            tipo.setError(null);
-        }
         try {
             Double val = Double.valueOf(valor.getText().toString());
             valor.setError(null);

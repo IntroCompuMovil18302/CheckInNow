@@ -8,6 +8,37 @@
 
     <!-- TODO: Update blank fragment layout -->
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:alpha="0.2"
+            android:scaleType="fitEnd"
+            android:src="@drawable/russian_house" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:alpha="0.2"
+            android:scaleType="fitEnd"
+            android:src="@drawable/chinese_house" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:alpha="0.2"
+            android:scaleType="fitEnd"
+            android:src="@drawable/hotel" />
+
+    </LinearLayout>
+
     <TextView
         android:id="@+id/Logo"
         android:layout_alignParentTop="true"
@@ -49,33 +80,6 @@
         android:textColor="@color/primary_light"
         android:background="@drawable/botonplano"
         android:fontFamily="@font/juiceline"/>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_alignParentBottom="true">
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:src="@drawable/russian_house"
-            android:scaleType="fitEnd"
-            android:alpha="0.2"/>
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:src="@drawable/chinese_house"
-            android:scaleType="fitEnd"
-            android:alpha="0.2"/>
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:src="@drawable/hotel"
-            android:scaleType="fitEnd"
-            android:alpha="0.2"/>
-
-    </LinearLayout>
 
 
 </RelativeLayout>

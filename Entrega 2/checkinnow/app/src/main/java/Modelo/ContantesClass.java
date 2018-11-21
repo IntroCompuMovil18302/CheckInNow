@@ -2,8 +2,11 @@ package Modelo;
 
 public class ContantesClass {
 
-    public static final String PATHANFITRIONSTORAGE = "anfitrion/idusuario/lugares/";
-    public static final String PATHLUGARESANFITRION = "anfitrion/idusuario/";
+    public static final String PATHANFITRIONSTORAGEinicio = "anfitrion/";
+    public static final String PATHANFITRIONSTORAGEfin = "/lugares/";
+    public static String Uid;
+    public static final String PATHLUGARESANFITRIONinicio = "anfitrion/";
+    public static final String PATHLUGARESANFITRIONfin = "/";
     public static final String TAG = "CHECKINNOWi";
     public static final int READ_EXTERNAL_STORAGE2 = 0;
     public static final int IMAGE_PICKER_REQUEST2 = 1;
