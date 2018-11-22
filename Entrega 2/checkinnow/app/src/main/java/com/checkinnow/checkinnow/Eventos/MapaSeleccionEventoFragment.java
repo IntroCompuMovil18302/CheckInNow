@@ -163,7 +163,7 @@ public class MapaSeleccionEventoFragment extends Fragment implements OnMapReadyC
         if (lastmarker != null) {
             lastmarker.remove();
         }
-        lastmarker = mMap.addMarker(new MarkerOptions().position(latLng).title("Aqui").icon(BitmapDescriptorFactory.fromResource(R.drawable.placeholder32)));
+        lastmarker = mMap.addMarker(new MarkerOptions().position(latLng).title("Aqui").icon(BitmapDescriptorFactory.fromResource(R.drawable.placeholder322)));
         latlong.setText("Lat: " + latLng.latitude + " Long: " + latLng.longitude);
     }
 }
