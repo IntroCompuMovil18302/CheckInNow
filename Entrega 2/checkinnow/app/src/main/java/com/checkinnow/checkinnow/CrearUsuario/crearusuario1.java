@@ -20,10 +20,12 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 
@@ -78,7 +80,7 @@ public class crearusuario1 extends Fragment implements DatePickerDialog.OnDateSe
     EditText ApellidosRegistros;
     EditText CorreoRegistro;
     EditText ContaseñaRegistro;
-    EditText PaisRegistro;
+    Spinner PaisRegistro;
 
     public final Calendar c = Calendar.getInstance();
     final int mes = c.get(Calendar.MONTH);
@@ -111,7 +113,7 @@ public class crearusuario1 extends Fragment implements DatePickerDialog.OnDateSe
         ApellidosRegistros = (EditText) v.findViewById(R.id.ApellidosRegistros);
         CorreoRegistro = (EditText) v.findViewById(R.id.CorreoRegistro);
         ContaseñaRegistro = (EditText) v.findViewById(R.id.ContaseñaRegistro);
-        PaisRegistro = (EditText) v.findViewById(R.id.PaisEdit);
+        PaisRegistro = (Spinner) v.findViewById(R.id.PaisEdit);
         Siguiente = (Button) v.findViewById(R.id.Siguiente);
 
         storage = FirebaseStorage.getInstance();
@@ -130,6 +132,12 @@ public class crearusuario1 extends Fragment implements DatePickerDialog.OnDateSe
             }
         };
 
+        PaisRegistro.setEnabled(true);
+        PaisRegistro.setFocusable(true);
+        ArrayAdapter<CharSequence> adapterNoticias = ArrayAdapter.createFromResource(getActivity(),R.array.paises_array,android.R.layout.simple_spinner_item);
+        adapterNoticias.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
+        PaisRegistro.setAdapter(adapterNoticias);
+
 //        validateForm();
         Siguiente.setOnClickListener(new View.OnClickListener() {
 
@@ -142,7 +150,7 @@ public class crearusuario1 extends Fragment implements DatePickerDialog.OnDateSe
                 StringCorreoRegistro=CorreoRegistro.getText().toString();
                 Log.d("AVISO", "MENSAJE A 0 CORREO  " + StringCorreoRegistro);
                 StringContaseñaRegistro=ContaseñaRegistro.getText().toString();
-                StringPaisRegistro=PaisRegistro.getText().toString();
+                StringPaisRegistro=PaisRegistro.getSelectedItem().toString();
 
                 if(StringCorreoRegistro.isEmpty() || StringContaseñaRegistro.isEmpty()) {
 
@@ -187,30 +195,30 @@ public class crearusuario1 extends Fragment implements DatePickerDialog.OnDateSe
     public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
 
     }
-        private void obtenerFecha(){
-            DatePickerDialog recogerFecha = new DatePickerDialog(getActivity(), new DatePickerDialog.OnDateSetListener() {
-                @Override
-                public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
-                    //Esta variable lo que realiza es aumentar en uno el mes ya que comienza desde 0 = enero
-                    final int mesActual = month + 1;
-                    //Formateo el día obtenido: antepone el 0 si son menores de 10
-                    String diaFormateado = (dayOfMonth < 10)? CERO + String.valueOf(dayOfMonth):String.valueOf(dayOfMonth);
-                    //Formateo el mes obtenido: antepone el 0 si son menores de 10
-                    String mesFormateado = (mesActual < 10)? CERO + String.valueOf(mesActual):String.valueOf(mesActual);
-                    //Muestro la fecha con el formato deseado
-                    TextoFecha.setText(diaFormateado + BARRA + mesFormateado + BARRA + year);
+    private void obtenerFecha(){
+        DatePickerDialog recogerFecha = new DatePickerDialog(getActivity(), new DatePickerDialog.OnDateSetListener() {
+            @Override
+            public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
+                //Esta variable lo que realiza es aumentar en uno el mes ya que comienza desde 0 = enero
+                final int mesActual = month + 1;
+                //Formateo el día obtenido: antepone el 0 si son menores de 10
+                String diaFormateado = (dayOfMonth < 10)? CERO + String.valueOf(dayOfMonth):String.valueOf(dayOfMonth);
+                //Formateo el mes obtenido: antepone el 0 si son menores de 10
+                String mesFormateado = (mesActual < 10)? CERO + String.valueOf(mesActual):String.valueOf(mesActual);
+                //Muestro la fecha con el formato deseado
+                TextoFecha.setText(diaFormateado + BARRA + mesFormateado + BARRA + year);
 
 
-                }
-                //Estos valores deben ir en ese orden, de lo contrario no mostrara la fecha actual
-                /**
-                 *También puede cargar los valores que usted desee
-                 */
-            },anio, mes, dia);
-            //Muestro el widget
-            recogerFecha.show();
+            }
+            //Estos valores deben ir en ese orden, de lo contrario no mostrara la fecha actual
+            /**
+             *También puede cargar los valores que usted desee
+             */
+        },anio, mes, dia);
+        //Muestro el widget
+        recogerFecha.show();
 
-        }
+    }
 
 
 
