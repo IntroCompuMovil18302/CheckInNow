@@ -30,24 +30,6 @@
             android:textColor="@color/primary_text"
             android:textSize="20dp" />
 
-        <Button
-            android:id="@+id/buttonBuscar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/gogo"
-            android:layout_alignEnd="@+id/gogo"
-            android:layout_alignParentBottom="true"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginBottom="10dp"
-            android:layout_toRightOf="@id/textoBuscar"
-            android:layout_weight="0.1"
-            android:background="@drawable/botonplano"
-            android:fontFamily="@font/juiceline"
-            android:text="Buscar"
-            android:textColor="@color/primary_light"
-            android:textSize="15dp" />
-
         <LinearLayout
             android:id="@+id/texto"
             android:layout_width="match_parent"

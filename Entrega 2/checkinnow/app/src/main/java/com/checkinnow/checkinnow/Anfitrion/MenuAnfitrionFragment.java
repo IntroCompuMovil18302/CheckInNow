@@ -2,7 +2,9 @@ package com.checkinnow.checkinnow.Anfitrion;
 
 import android.app.Fragment;
 import android.app.FragmentTransaction;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.RequiresApi;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.checkinnow.checkinnow.Huesped.VesreservasFragment;
+import com.checkinnow.checkinnow.Huesped.consultarFragment;
 import com.checkinnow.checkinnow.Huesped.mapconsulFragment;
 import com.checkinnow.checkinnow.R;
 import com.checkinnow.checkinnow.SesionIniciada.Gmap2Fragment;
@@ -50,6 +53,12 @@ public class MenuAnfitrionFragment extends Fragment {
         punto2 = (Button) v.findViewById(R.id.punto2);
         punto3 = (Button) v.findViewById(R.id.punto3);
 
+        punto1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                filtrar();
+            }
+        });
         punto2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -78,6 +87,12 @@ public class MenuAnfitrionFragment extends Fragment {
         });
 
         return v;
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.M)
+    private void filtrar() {
+        android.app.FragmentManager fm = getFragmentManager();
+        fm.beginTransaction().replace(R.id.frameDinamico, new consultarFragment()).addToBackStack("filtrar").commit();
     }
 
     private void verreservas() {
