@@ -91,7 +91,7 @@ public class mapconsulFragment extends Fragment implements OnMapReadyCallback {
 
         v = inflater.inflate(R.layout.fragment_mapconsul, container, false);
 
-        botonseleccion = v.findViewById(R.id.buttonBuscar);
+       // botonseleccion = v.findViewById(R.id.buttonBuscar);
         origen = v.findViewById(R.id.fechaorig);
         fin = v.findViewById(R.id.fechafin);
 
