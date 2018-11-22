@@ -19,6 +19,7 @@ import android.widget.TextView;
 import com.checkinnow.checkinnow.Anfitrion.AgregarLugarFragment;
 import com.checkinnow.checkinnow.Anfitrion.MenuAnfitrionFragment;
 import com.checkinnow.checkinnow.Anfitrion.VerlugaresFragment;
+import com.checkinnow.checkinnow.Huesped.ExtraFragment;
 import com.checkinnow.checkinnow.Huesped.VesreservasFragment;
 import com.checkinnow.checkinnow.Huesped.consultarFragment;
 import com.checkinnow.checkinnow.Huesped.mapconsulFragment;
@@ -97,6 +98,16 @@ public class NavdraweActivity extends AppCompatActivity
         android.app.FragmentManager fm = getFragmentManager();
 
         int id = item.getItemId();
+
+        if (id == R.id.nav_Huesped) {
+            // Handle the camera action
+            //fm.beginTransaction().replace(R.id.frameDinamico, new ImportFragment()).commit();
+            android.app.FragmentManager fmm = getFragmentManager();
+            fmm.beginTransaction().replace(R.id.frameDinamico, new ExtraFragment()).addToBackStack("filtrar").commit();
+
+
+
+        }
 
         if (id == R.id.nav_filtroTextual) {
             // Handle the camera action

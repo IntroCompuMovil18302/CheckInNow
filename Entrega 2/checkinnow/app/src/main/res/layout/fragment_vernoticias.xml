@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Noticias.VerNoticiasFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ScrollView
+            android:id="@+id/ScrollOpciones"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/curvos"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/TituloAgregar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:fontFamily="@font/juiceline"
+                    android:text="Agregar Noticia"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/AgregarNoticia"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/TituloAgregar"
+
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/botonplano"
+
+                    android:fontFamily="@font/juiceline"
+                    android:text="Agregar"
+                    android:textColor="@color/primary_light"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/TituloBuscar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/AgregarNoticia"
+                    android:fontFamily="@font/juiceline"
+                    android:text="Filtrar Noticia"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/linearBuscar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/TituloBuscar"
+                    android:layout_marginTop="5dp">
+
+                    <Spinner
+                        android:id="@+id/spinnerTipoBuscar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.8"
+                        android:text="Select" />
+
+                    <Button
+                        android:id="@+id/botonFiltrar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+
+                        android:background="@drawable/botonplano"
+                        android:fontFamily="@font/juiceline"
+                        android:text="Filtrar"
+                        android:textColor="@color/primary_light"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearCamposBuscar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linearBuscar">
+
+                    <EditText
+                        android:id="@+id/textoBuscarLugar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.5"
+                        android:hint="Ingrese el Lugar" />
+
+                    <EditText
+                        android:id="@+id/textoBuscarFecha"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.5"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:hint="Seleccione Fecha"
+                        android:maxLines="1" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/linearFiltroBuscar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linearCamposBuscar">
+
+                    <Spinner
+                        android:id="@+id/spinnerBuscarLugarFiltro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:hint="Ingrese el Lugar" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+
+        <RelativeLayout
+            android:id="@+id/BarraLista"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ScrollOpciones"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/curvos"
+            android:padding="5dp">
+
+
+            <ListView
+                android:id="@+id/Lugareslistview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
+
+            </ListView>
+        </RelativeLayout>
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentBottom="true">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:alpha="0.2"
+                android:scaleType="fitEnd"
+                android:src="@drawable/russian_house" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:alpha="0.2"
+                android:scaleType="fitEnd"
+                android:src="@drawable/chinese_house" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:alpha="0.2"
+                android:scaleType="fitEnd"
+                android:src="@drawable/hotel" />
+
+        </LinearLayout>
+
+        </RelativeLayout>
+</FrameLayout>

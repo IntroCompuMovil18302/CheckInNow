@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">CheckINow</string>
     <string name="tituloApp">CheckINow</string>
     <string name="inicio">Inicio</string>
@@ -14,6 +14,7 @@
     <string name="open_drawer">Open navigation drawer</string>
     <string name="close_drawer">Close navigation drawer</string>
 
+
     <string name="NombreApp">Check-In-Now</string>
 
     <!-- TODO: Remove or change this placeholder text -->
@@ -28,7 +29,8 @@
     <string name="title_activity_navdrawe">NavdraweActivity</string>
     <string name="title_activity_maps">Map</string>
 
-    <string name="botonagregarlocacion">Agregar lugar</string>
+    <string name="botonagregarlocacion" tools:ignore="ExtraTranslation">Agregar lugar</string>
+    <string name="botonagregarlocacionE">Agregar lugar de evento </string>
 
     <string-array name="tiposlugares">
         <item>Casa</item>
@@ -203,6 +205,33 @@
         <item>ZMK</item>
         <item>ZWL</item>
 
+    </string-array>
+
+
+    <string-array name="TipoNoticia">
+        <item>Competencia Deportiva</item>
+        <item>Obra Teatro</item>
+        <item>Noticia global</item>
+        <item>Salud</item>
+        <item>Comida</item>
+        <item>Otro</item>
+
+    </string-array>
+
+
+    <string-array name="TipoEvento">
+        <item>Concierto</item>
+        <item>Rock al parque</item>
+        <item>Cabalgatas</item>
+        <item>Festival</item>
+        <item>Otro</item>
+
+    </string-array>
+
+    <string-array name="TipoBusquedaNoticia">
+        <item>Fecha</item>
+        <item>Lugar</item>
+        <item>Filtro</item>
     </string-array>
 
 
