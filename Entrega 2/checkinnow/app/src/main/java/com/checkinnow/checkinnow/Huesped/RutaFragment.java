@@ -21,6 +21,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -94,6 +95,7 @@ public class RutaFragment extends Fragment implements OnMapReadyCallback {
     private Marker ira;
     private LugarClass lugar;
     private TextView donde;
+    private Button buttonatrass;
 
     public RutaFragment() {
         // Required empty public constructor
@@ -123,6 +125,7 @@ public class RutaFragment extends Fragment implements OnMapReadyCallback {
         mMapView.getMapAsync(this);
         voy = 0;
         donde = v.findViewById(R.id.adonde);
+        buttonatrass = v.findViewById(R.id.buttonatrass);
         //Log.i(TAG,lugar.toString());
         donde.setText(lugar.getNombre());
         requestPermission(getActivity(), Manifest.permission.ACCESS_FINE_LOCATION,
@@ -186,7 +189,21 @@ public class RutaFragment extends Fragment implements OnMapReadyCallback {
             }
         };
 
+        buttonatrass.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                atras();
+            }
+        });
+
         return v;
+    }
+
+    private void atras() {
+        int count = getFragmentManager().getBackStackEntryCount();
+
+        getFragmentManager().popBackStack();
+
     }
 
     private void trazarRuta(JSONObject jso) {
@@ -211,13 +228,7 @@ public class RutaFragment extends Fragment implements OnMapReadyCallback {
                         List<LatLng> list = PolyUtil.decode(polyline);
                         mMap.addPolyline(new PolylineOptions().addAll(list).color(Color.BLUE).width(10));
                     }
-
-
-
                 }
-
-
-
             }
 
         } catch (JSONException e) {

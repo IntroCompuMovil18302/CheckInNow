@@ -65,8 +65,7 @@ public class VesreservasFragment extends Fragment {
 
         database = FirebaseDatabase.getInstance();
         mStorageRef = FirebaseStorage.getInstance().getReference();
-        datos = new ArrayList<List<String>>();
-        lugares = new ArrayList<LugarClass>();
+
     }
 
 
@@ -76,6 +75,9 @@ public class VesreservasFragment extends Fragment {
         // Inflate the layout for this fragment
         v = inflater.inflate(R.layout.fragment_vesreservas, container, false);
         list = (ListView) v.findViewById(R.id.Reservaslistview);
+
+        datos = new ArrayList<List<String>>();
+        lugares = new ArrayList<LugarClass>();
 
         loadReservas();
 
@@ -170,11 +172,7 @@ public class VesreservasFragment extends Fragment {
 
         Intent intento = new Intent();
         Bundle bundle = new Bundle();
-
-
         bundle.putSerializable("LUGAR", lugares.get(position));
-        //intento.putExtra("bundle", bundle);
-
         FragmentManager fm = getFragmentManager();
         FragmentTransaction ft =  fm.beginTransaction();
         ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
@@ -183,9 +181,6 @@ public class VesreservasFragment extends Fragment {
         ft.replace(R.id.frameDinamico, fragment2);
         ft.addToBackStack(null);
         ft.commit();
-
-       /* android.app.FragmentManager fm = getFragmentManager();
-        fm.beginTransaction().replace(R.id.frameDinamico, new RutaFragment()).addToBackStack("maparuta").commit();*/
     }
 
 
