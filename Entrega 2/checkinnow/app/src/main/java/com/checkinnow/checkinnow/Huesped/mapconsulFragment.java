@@ -116,14 +116,14 @@ public class mapconsulFragment extends Fragment implements OnMapReadyCallback {
         });
 
 
-        botonseleccion.setOnClickListener(new View.OnClickListener() {
+        /*botonseleccion.setOnClickListener(new View.OnClickListener() {
             @TargetApi(Build.VERSION_CODES.O)
             @RequiresApi(api = Build.VERSION_CODES.O)
             @Override
             public void onClick(View v) {
                 //regresar();
             }
-        });
+        });*/
 
 
         return v;
