@@ -1,6 +1,8 @@
 package com.checkinnow.checkinnow;
 
+import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.RequiresApi;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -14,7 +16,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
+import com.checkinnow.checkinnow.Anfitrion.AgregarLugarFragment;
 import com.checkinnow.checkinnow.Anfitrion.MenuAnfitrionFragment;
+import com.checkinnow.checkinnow.Anfitrion.VerlugaresFragment;
+import com.checkinnow.checkinnow.Huesped.VesreservasFragment;
+import com.checkinnow.checkinnow.Huesped.consultarFragment;
+import com.checkinnow.checkinnow.Huesped.mapconsulFragment;
 import com.checkinnow.checkinnow.SesionIniciada.Gmap2Fragment;
 import com.checkinnow.checkinnow.SesionIniciada.GmapFragment;
 import com.checkinnow.checkinnow.SesionIniciada.ImportFragment;
@@ -79,6 +86,7 @@ public class NavdraweActivity extends AppCompatActivity
         return super.onOptionsItemSelected(item);
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.M)
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
@@ -90,19 +98,40 @@ public class NavdraweActivity extends AppCompatActivity
 
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
+        if (id == R.id.nav_filtroTextual) {
             // Handle the camera action
-            fm.beginTransaction().replace(R.id.frameDinamico, new ImportFragment()).commit();
-        } else if (id == R.id.nav_gallery) {
+            //fm.beginTransaction().replace(R.id.frameDinamico, new ImportFragment()).commit();
+            android.app.FragmentManager fmm = getFragmentManager();
+            fmm.beginTransaction().replace(R.id.frameDinamico, new consultarFragment()).addToBackStack("filtrar").commit();
+
+
+
+        } else if(id == R.id.nav_filtroposicional){
+
+            android.app.FragmentManager frm = getFragmentManager();
+            frm.beginTransaction().replace(R.id.frameDinamico, new mapconsulFragment()).addToBackStack("agregarFragverconsulmapa").commit();
+        }else if(id == R.id.nav_mostrarRuta){
+
+            android.app.FragmentManager fwm = getFragmentManager();
+            fwm.beginTransaction().replace(R.id.frameDinamico, new VesreservasFragment()).addToBackStack("verreservas").commit();
+
+        }
+
+
+        else if (id == R.id.nav_gallery) {
             fm.beginTransaction().replace(R.id.frameDinamico, new GmapFragment()).commit();
         } else if (id == R.id.nav_slideshow) {
             fm.beginTransaction().replace(R.id.frameDinamico, new Gmap2Fragment()).commit();
 
-        } else if (id == R.id.nav_share) {
+        } else if (id == R.id.nav_agregarLugar) {
+            android.app.FragmentManager frm = getFragmentManager();
+            frm.beginTransaction().replace(R.id.frameDinamico, new AgregarLugarFragment()).addToBackStack("agregarFragagregarlugar").commit();
 
-            fm.beginTransaction().replace(R.id.frameDinamico, new MenuAnfitrionFragment()).commit();
+            //fm.beginTransaction().replace(R.id.frameDinamico, new MenuAnfitrionFragment()).commit();
 
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.nav_verLugar) {
+            android.app.FragmentManager fxm = getFragmentManager();
+            fxm.beginTransaction().replace(R.id.frameDinamico, new VerlugaresFragment()).addToBackStack("agregarFragverlugar").commit();
 
         }
 

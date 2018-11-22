@@ -5,9 +5,20 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
+            android:id="@+id/nav_Huesped"
             android:icon="@drawable/ic_account_box"
             android:title="Huesped" />
+
+        <item
+            android:id="@+id/nav_filtroTextual"
+            android:title="Filtro Textual" />
+        <item
+            android:id="@+id/nav_filtroposicional"
+            android:title="Filtro Posicional" />
+        <item
+            android:id="@+id/nav_mostrarRuta"
+            android:title="Mostrar Ruta" />
+
         <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/marca"
@@ -21,14 +32,17 @@
 
     <item android:title="Anfitrion">
         <menu>
+
             <item
                 android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Menu Anfitrion" />
+                android:icon="@drawable/ic_account_box"
+                android:title="Anfitrion" />
             <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
+                android:id="@+id/nav_agregarLugar"
+                android:title="Agregar Lugar" />
+            <item
+                android:id="@+id/nav_verLugar"
+                android:title="Ver" />
         </menu>
     </item>
 
