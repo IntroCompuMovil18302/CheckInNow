@@ -4,9 +4,11 @@ package com.checkinnow.checkinnow.Huesped;
 import android.Manifest;
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.app.DownloadManager;
 import android.content.Intent;
 import android.content.IntentSender;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
 import android.location.Location;
 import android.os.Build;
 import android.os.Bundle;
@@ -19,8 +21,15 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.maps.android.PolyUtil;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 import com.checkinnow.checkinnow.R;
 import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.common.api.CommonStatusCodes;
@@ -44,21 +53,27 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MapStyleOptions;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.gms.maps.model.PolylineOptions;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 
+import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.File;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Executor;
 
+import Modelo.LugarClass;
+import Modelo.Reserva;
+
 import static Modelo.ContantesClass.LOCATION_PERMISSION;
+import static Modelo.ContantesClass.TAG;
 import static android.app.Activity.RESULT_OK;
 
-/**
- * A simple {@link Fragment} subclass.
- */
 public class RutaFragment extends Fragment implements OnMapReadyCallback {
 
     MapView mMapView;
@@ -76,9 +91,23 @@ public class RutaFragment extends Fragment implements OnMapReadyCallback {
     private Marker oldmark;
     private Marker newmark;
     private Marker lastmark;
+    private Marker ira;
+    private LugarClass lugar;
+    private TextView donde;
 
     public RutaFragment() {
         // Required empty public constructor
+    }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        Bundle bundle = this.getArguments();
+        if (bundle != null) {
+            lugar = (LugarClass) bundle.getSerializable("LUGAR");
+            Log.i(TAG, lugar.toString());
+        }
     }
 
 
@@ -93,7 +122,9 @@ public class RutaFragment extends Fragment implements OnMapReadyCallback {
         mMapView.onCreate(savedInstanceState);
         mMapView.getMapAsync(this);
         voy = 0;
-
+        donde = v.findViewById(R.id.adonde);
+        //Log.i(TAG,lugar.toString());
+        donde.setText(lugar.getNombre());
         requestPermission(getActivity(), Manifest.permission.ACCESS_FINE_LOCATION,
                 "Se necesita acceder a la ubicacion", LOCATION_PERMISSION);
 
@@ -122,7 +153,30 @@ public class RutaFragment extends Fragment implements OnMapReadyCallback {
                         mMap.moveCamera(CameraUpdateFactory.newLatLng(user));
                         voy++;
 
+                        String url = "https://maps.googleapis.com/maps/api/directions/json?origin="+newmark.getPosition().latitude+","+newmark.getPosition().longitude+"&destination="+lastmark.getPosition().latitude+","+lastmark.getPosition().longitude+ "&key=" + "AIzaSyCD3_5vFwy-QFyFsomsi-WMxUUUcW5TtQQ";
+                        RequestQueue queue = Volley.newRequestQueue(getContext());
+                        StringRequest stringRequest = new StringRequest(com.android.volley.Request.Method.GET, url, new Response.Listener<String>() {
+                            @Override
+                            public void onResponse(String response) {
+                                try {
+                                    Log.i("LOCATION", response);
+                                    jso = new JSONObject(response);
+                                    trazarRuta(jso);
+                                } catch (JSONException e) {
+                                    e.printStackTrace();
+                                }
+
+                            }
+                        }, new Response.ErrorListener() {
+                            @Override
+                            public void onErrorResponse(VolleyError error) {
+
+                            }
+                        });
+                        queue.add(stringRequest);
+
                     } else {
+
                         LatLng user = new LatLng(location.getLatitude(), location.getLongitude());
                         oldmark.remove();
                         newmark = mMap.addMarker(new MarkerOptions().position(user).title("Usted").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.usermark)));
@@ -133,6 +187,43 @@ public class RutaFragment extends Fragment implements OnMapReadyCallback {
         };
 
         return v;
+    }
+
+    private void trazarRuta(JSONObject jso) {
+
+        JSONArray jRoutes;
+        JSONArray jLegs;
+        JSONArray jSteps;
+
+        try {
+            jRoutes = jso.getJSONArray("routes");
+            for (int i=0; i<jRoutes.length();i++){
+
+                jLegs = ((JSONObject)(jRoutes.get(i))).getJSONArray("legs");
+
+                for (int j=0; j<jLegs.length();j++){
+
+                    jSteps = ((JSONObject)jLegs.get(j)).getJSONArray("steps");
+
+                    for (int k = 0; k<jSteps.length();k++){
+                        String polyline = ""+((JSONObject)((JSONObject)jSteps.get(k)).get("polyline")).get("points");
+                        Log.i("end",""+polyline);
+                        List<LatLng> list = PolyUtil.decode(polyline);
+                        mMap.addPolyline(new PolylineOptions().addAll(list).color(Color.BLUE).width(10));
+                    }
+
+
+
+                }
+
+
+
+            }
+
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
     }
 
     protected LocationRequest createLocationRequest() {
@@ -225,12 +316,12 @@ public class RutaFragment extends Fragment implements OnMapReadyCallback {
         mMap.getUiSettings().setZoomGesturesEnabled(true);
         mMap.getUiSettings().setZoomControlsEnabled(true);
 
-        mMap.setMapStyle(MapStyleOptions
-                .loadRawResourceStyle(v.getContext(), R.raw.mapa));
-        LatLng location = new LatLng(4.0151969, -74.1989402);
-        //lastmarker = mMap.addMarker(new MarkerOptions().position(location).title("Aqui"));
-        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(location, 5));
-        //lastmarker.remove();
+        mMap.setMapStyle(MapStyleOptions.loadRawResourceStyle(v.getContext(), R.raw.mapa));
+        LatLng punto = new LatLng(lugar.getLatitude(), lugar.getLongitud());
+        lastmark = mMap.addMarker(new MarkerOptions().position(punto).title(lugar.getNombre()).snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.placeholder322)));
+        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(punto, 5));
+
+
     }
 
 }

@@ -2,6 +2,9 @@ package com.checkinnow.checkinnow.Huesped;
 
 
 import android.app.Fragment;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.util.Log;
@@ -42,14 +45,15 @@ import static Modelo.ContantesClass.Uid;
 
 public class VesreservasFragment extends Fragment {
 
-    List<List<String>> datos;
-    List<String> temp;
+    private List<List<String>> datos;
+    private List<String> temp;
     private View v;
     private FirebaseDatabase database;
     private DatabaseReference myRef;
     private DatabaseReference ref;
     private StorageReference mStorageRef;
     private ListView list;
+    private List<LugarClass> lugares;
 
     public VesreservasFragment() {
         // Required empty public constructor
@@ -62,6 +66,7 @@ public class VesreservasFragment extends Fragment {
         database = FirebaseDatabase.getInstance();
         mStorageRef = FirebaseStorage.getInstance().getReference();
         datos = new ArrayList<List<String>>();
+        lugares = new ArrayList<LugarClass>();
     }
 
 
@@ -77,7 +82,7 @@ public class VesreservasFragment extends Fragment {
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                trazarruta();
+                trazarruta(position);
             }
         });
 
@@ -93,6 +98,8 @@ public class VesreservasFragment extends Fragment {
                 for (DataSnapshot singleSnapshot : dataSnapshot.getChildren()) {
                     final Reserva resev = singleSnapshot.getValue(Reserva.class);
                     temp = new ArrayList<String>();
+                    temp.clear();
+
 
 
                     ref = database.getReference(PATHLUGARES + resev.getLugarid());
@@ -101,7 +108,8 @@ public class VesreservasFragment extends Fragment {
                         public void onDataChange(DataSnapshot dataSnapshot) {
                             LugarClass lugar = dataSnapshot.getValue(LugarClass.class);
                             StorageReference lugarRef = mStorageRef.child(lugar.getPath()).child(lugar.getNombreimagenes().get(0));
-
+                            Log.i(TAG, "-------"+lugar.toString());
+                            lugares.add(lugar);
                             File localFile = null;
 
                             try {
@@ -139,25 +147,45 @@ public class VesreservasFragment extends Fragment {
                             datos.add(temp);
                         }
 
+
                         @Override
                         public void onCancelled(DatabaseError databaseError) {
                             System.out.println("The read failed: " + databaseError.getCode());
                         }
                     });
                 }
+                list.invalidate();
                 list.setAdapter(new LugarAdapter(v.getContext(), datos));
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
                 Log.w(TAG, "error en la consulta", databaseError.toException());
+
             }
         });
     }
 
-    private void trazarruta() {
-        android.app.FragmentManager fm = getFragmentManager();
-        fm.beginTransaction().replace(R.id.frameDinamico, new RutaFragment()).addToBackStack("maparuta").commit();
+    private void trazarruta(int position) {
+
+        Intent intento = new Intent();
+        Bundle bundle = new Bundle();
+
+
+        bundle.putSerializable("LUGAR", lugares.get(position));
+        //intento.putExtra("bundle", bundle);
+
+        FragmentManager fm = getFragmentManager();
+        FragmentTransaction ft =  fm.beginTransaction();
+        ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
+        RutaFragment fragment2 = new RutaFragment();
+        fragment2.setArguments(bundle);
+        ft.replace(R.id.frameDinamico, fragment2);
+        ft.addToBackStack(null);
+        ft.commit();
+
+       /* android.app.FragmentManager fm = getFragmentManager();
+        fm.beginTransaction().replace(R.id.frameDinamico, new RutaFragment()).addToBackStack("maparuta").commit();*/
     }
 
 
