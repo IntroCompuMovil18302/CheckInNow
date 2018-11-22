@@ -1,9 +1,10 @@
 package Modelo;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LugarClass {
+public class LugarClass implements Serializable {
 
     private double latitude;
     private double longitud;
@@ -13,6 +14,80 @@ public class LugarClass {
     private String ID;
     private String path;
     private List<String> nombreimagenes;
+    private int camas;
+    private int habitaciones;
+    private int banos;
+    private boolean estacionamiento;
+    private boolean mascota;
+    private String moneda;
+
+    @Override
+    public String toString() {
+        return "LugarClass{" +
+                "latitude=" + latitude +
+                ", longitud=" + longitud +
+                ", valor=" + valor +
+                ", nombre='" + nombre + '\'' +
+                ", tipo='" + tipo + '\'' +
+                ", ID='" + ID + '\'' +
+                ", path='" + path + '\'' +
+                ", nombreimagenes=" + nombreimagenes +
+                ", camas=" + camas +
+                ", habitaciones=" + habitaciones +
+                ", banos=" + banos +
+                ", estacionamiento=" + estacionamiento +
+                ", mascota=" + mascota +
+                ", moneda='" + moneda + '\'' +
+                '}';
+    }
+
+    public int getCamas() {
+        return camas;
+    }
+
+    public void setCamas(int camas) {
+        this.camas = camas;
+    }
+
+    public int getHabitaciones() {
+        return habitaciones;
+    }
+
+    public void setHabitaciones(int habitaciones) {
+        this.habitaciones = habitaciones;
+    }
+
+    public int getBanos() {
+        return banos;
+    }
+
+    public void setBanos(int banos) {
+        this.banos = banos;
+    }
+
+    public boolean isEstacionamiento() {
+        return estacionamiento;
+    }
+
+    public void setEstacionamiento(boolean estacionamiento) {
+        this.estacionamiento = estacionamiento;
+    }
+
+    public boolean isMascota() {
+        return mascota;
+    }
+
+    public void setMascota(boolean mascota) {
+        this.mascota = mascota;
+    }
+
+    public String getMoneda() {
+        return moneda;
+    }
+
+    public void setMoneda(String moneda) {
+        this.moneda = moneda;
+    }
 
     public LugarClass() {
         nombreimagenes = new ArrayList<String>();
@@ -34,18 +109,6 @@ public class LugarClass {
         this.path = path;
     }
 
-    @Override
-    public String toString() {
-        return "LugarClass{" +
-                "latitude=" + latitude +
-                ", longitud=" + longitud +
-                ", valor=" + valor +
-                ", nombre='" + nombre + '\'' +
-                ", tipo='" + tipo + '\'' +
-                ", ID='" + ID + '\'' +
-                ", path='" + path + '\'' +
-                '}';
-    }
 
     public String getID() {
         return ID;

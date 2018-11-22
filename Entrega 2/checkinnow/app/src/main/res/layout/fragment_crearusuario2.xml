@@ -14,7 +14,7 @@
         android:layout_height="180dp"
         android:layout_margin="30dp"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/Logo"
+        android:layout_below="@id/tittle"
         android:background="@drawable/curvos"
         android:layout_marginTop="10dp">
 

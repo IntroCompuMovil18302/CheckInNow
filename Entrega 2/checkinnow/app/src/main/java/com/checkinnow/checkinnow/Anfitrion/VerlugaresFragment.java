@@ -33,8 +33,10 @@ import java.util.List;
 import Modelo.LugarAdapter;
 import Modelo.LugarClass;
 
-import static Modelo.ContantesClass.PATHLUGARESANFITRION;
+import static Modelo.ContantesClass.PATHLUGARESANFITRIONfin;
+import static Modelo.ContantesClass.PATHLUGARESANFITRIONinicio;
 import static Modelo.ContantesClass.TAG;
+import static Modelo.ContantesClass.Uid;
 
 
 public class VerlugaresFragment extends Fragment implements DatePickerDialog.OnDateSetListener{
@@ -73,7 +75,7 @@ public class VerlugaresFragment extends Fragment implements DatePickerDialog.OnD
 
         v = inflater.inflate(R.layout.fragment_verlugares, container, false);
 
-        list = (ListView) v.findViewById(R.id.Lugareslistview);
+        list = (ListView) v.findViewById(R.id.Reservaslistview);
 
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -90,7 +92,7 @@ public class VerlugaresFragment extends Fragment implements DatePickerDialog.OnD
 
     //////////////////////////////////////////////TRAERLUGARES/////////////////////////////////////////////////////////////////////////////////////////////
     public void loadUsers() {
-        myRef = database.getReference(PATHLUGARESANFITRION);
+        myRef = database.getReference(PATHLUGARESANFITRIONinicio+Uid+PATHLUGARESANFITRIONfin);
 
         myRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
@@ -136,7 +138,7 @@ public class VerlugaresFragment extends Fragment implements DatePickerDialog.OnD
                     temp.add("Tipo: " + lugar.getTipo() + "\nValor: " + String.valueOf(lugar.getValor()));
                     datos.add(temp);
                 }
-                list.setAdapter(new LugarAdapter(getContext(), datos));
+                list.setAdapter(new LugarAdapter(v.getContext(), datos));
             }
 
             @Override
@@ -166,7 +168,10 @@ public class VerlugaresFragment extends Fragment implements DatePickerDialog.OnD
 
     private void obtenerFecha(){
 
-        DatePickerDialog recogerFecha = new DatePickerDialog(getActivity());
+        DatePickerDialog recogerFecha = null;
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N) {
+            recogerFecha = new DatePickerDialog(getActivity());
+        }
         onDateSet(recogerFecha,anio,mes,dia);
         recogerFecha.show();
 

@@ -8,8 +8,39 @@
 
     <!-- TODO: Update blank fragment layout -->
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:alpha="0.2"
+            android:scaleType="fitEnd"
+            android:src="@drawable/russian_house" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:alpha="0.2"
+            android:scaleType="fitEnd"
+            android:src="@drawable/chinese_house" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:alpha="0.2"
+            android:scaleType="fitEnd"
+            android:src="@drawable/hotel" />
+
+    </LinearLayout>
+
     <TextView
-        android:id="@+id/Logo"
+        android:id="@+id/tittle"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_width="300dp"
@@ -49,33 +80,48 @@
         android:textColor="@color/primary_light"
         android:background="@drawable/botonplano"
         android:fontFamily="@font/juiceline"/>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_alignParentBottom="true">
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:src="@drawable/russian_house"
-            android:scaleType="fitEnd"
-            android:alpha="0.2"/>
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:src="@drawable/chinese_house"
-            android:scaleType="fitEnd"
-            android:alpha="0.2"/>
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:src="@drawable/hotel"
-            android:scaleType="fitEnd"
-            android:alpha="0.2"/>
 
-    </LinearLayout>
+    <Button
+        android:id="@+id/punto1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/verbutton"
+        android:layout_alignStart="@+id/Agregarbutton"
+        android:layout_marginStart="-55dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/botonplano"
+        android:fontFamily="@font/juiceline"
+        android:text="PUNTO 1 HUESPED"
+        android:textColor="@color/primary_light"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/punto2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/verbutton"
+        android:layout_alignStart="@+id/Agregarbutton"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/botonplano"
+        android:fontFamily="@font/juiceline"
+        android:text="PUNTO 2 HUESPED"
+        android:textColor="@color/primary_light"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/punto3"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/verbutton"
+        android:layout_alignStart="@+id/Agregarbutton"
+        android:layout_marginStart="-58dp"
+        android:layout_marginTop="91dp"
+        android:background="@drawable/botonplano"
+        android:fontFamily="@font/juiceline"
+        android:text="ver e ir"
+        android:textColor="@color/primary_light"
+        android:textSize="15dp" />
 
 
 </RelativeLayout>

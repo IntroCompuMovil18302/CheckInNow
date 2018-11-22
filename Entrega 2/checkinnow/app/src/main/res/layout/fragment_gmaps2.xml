@@ -9,7 +9,7 @@
         android:background="@color/primary_light"
         android:layout_margin="2dp">
         <TextView
-            android:id="@+id/Logo"
+            android:id="@+id/tittle"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_width="300dp"
@@ -22,7 +22,7 @@
             android:fontFamily="@font/oestrogen"
             />
         <RelativeLayout
-            android:layout_below="@id/Logo"
+            android:layout_below="@id/tittle"
             android:id="@+id/buscadorBarra"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

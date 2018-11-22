@@ -13,7 +13,7 @@
         android:scaleType="centerCrop"
         android:alpha="0.6"/>
     <ImageView
-        android:id="@+id/Logo"
+        android:id="@+id/tittle"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_width="300dp"
@@ -27,7 +27,7 @@
         android:id="@+id/InfoUsuario"
         android:layout_width="300dp"
         android:layout_height="150dp"
-        android:layout_below="@+id/Logo"
+        android:layout_below="@+id/tittle"
         android:layout_marginTop="10dp"
         android:background="@drawable/borde_fondo"
         android:layout_centerHorizontal="true"
