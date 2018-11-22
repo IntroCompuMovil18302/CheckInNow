@@ -16,4 +16,5 @@ public class ContantesClass {
     public static final int IMAGE_PICKER_REQUEST2 = 1;
     public static final int REQUEST_IMAGE_CAPTURE = 2;
     public static final int REQUEST_LOCATION2 = 3;
+    public final static int LOCATION_PERMISSION = 4;
 }

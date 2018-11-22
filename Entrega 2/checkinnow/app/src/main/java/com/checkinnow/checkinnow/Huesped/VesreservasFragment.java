@@ -156,6 +156,8 @@ public class VesreservasFragment extends Fragment {
     }
 
     private void trazarruta() {
+        android.app.FragmentManager fm = getFragmentManager();
+        fm.beginTransaction().replace(R.id.frameDinamico, new RutaFragment()).addToBackStack("maparuta").commit();
     }
 
 
