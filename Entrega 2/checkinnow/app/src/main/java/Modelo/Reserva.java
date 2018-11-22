@@ -7,6 +7,15 @@ public class Reserva implements Serializable {
     private String userid;
     private String fechaorigen;
     private String fechafin;
+    private LugarClass lugar;
+
+    public LugarClass getLugar() {
+        return lugar;
+    }
+
+    public void setLugar(LugarClass lugar) {
+        this.lugar = lugar;
+    }
 
     public Reserva(String lugarid, String userid, String fechaorigen, String fechafin) {
         this.lugarid = lugarid;

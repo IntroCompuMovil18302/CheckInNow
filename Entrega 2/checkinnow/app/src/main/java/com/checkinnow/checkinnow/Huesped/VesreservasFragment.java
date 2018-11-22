@@ -53,7 +53,7 @@ public class VesreservasFragment extends Fragment {
     private DatabaseReference ref;
     private StorageReference mStorageRef;
     private ListView list;
-    private List<LugarClass> lugares;
+    private List<Reserva> lugares;
 
     public VesreservasFragment() {
         // Required empty public constructor
@@ -77,7 +77,7 @@ public class VesreservasFragment extends Fragment {
         list = (ListView) v.findViewById(R.id.Reservaslistview);
 
         datos = new ArrayList<List<String>>();
-        lugares = new ArrayList<LugarClass>();
+        lugares = new ArrayList<Reserva>();
 
         loadReservas();
 
@@ -99,11 +99,45 @@ public class VesreservasFragment extends Fragment {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 for (DataSnapshot singleSnapshot : dataSnapshot.getChildren()) {
                     final Reserva resev = singleSnapshot.getValue(Reserva.class);
+                    lugares.add(resev);
                     temp = new ArrayList<String>();
                     temp.clear();
 
 
+                    StorageReference lugarRef = mStorageRef.child(resev.getLugar().getPath()).child(resev.getLugar().getNombreimagenes().get(0));
+                    File localFile = null;
 
+                    try {
+                        localFile = File.createTempFile("images_" + resev.getLugar().getNombreimagenes().get(0), ".png");
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    Log.i(TAG, localFile.toString());
+
+                    lugarRef.getFile(localFile)
+                            .addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
+                                @Override
+                                public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
+                                    Log.i(TAG, "EXITO" + taskSnapshot.getStorage().toString());
+                                    list.invalidate();
+                                    list.setAdapter((LugarAdapter) list.getAdapter());
+                                }
+                            }).addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception exception) {
+                            Log.i(TAG, "FALLA");
+                        }
+                    });
+
+                    temp.add(resev.getLugar().getNombre());
+                    temp.add(localFile.getPath());
+                    temp.add("Tipo: " + resev.getLugar().getTipo() + "\nValor: " +
+                            String.valueOf(resev.getLugar().getValor()) + " " +
+                            resev.getLugar().getMoneda() +
+                            "\nRESERVADO: " + resev.getFechaorigen() + " - " + resev.getFechafin());
+                    datos.add(temp);
+
+/*
                     ref = database.getReference(PATHLUGARES + resev.getLugarid());
                     ref.addValueEventListener(new ValueEventListener() {
                         @Override
@@ -154,9 +188,9 @@ public class VesreservasFragment extends Fragment {
                         public void onCancelled(DatabaseError databaseError) {
                             System.out.println("The read failed: " + databaseError.getCode());
                         }
-                    });
+                    });*/
                 }
-                list.invalidate();
+                //list.invalidate();
                 list.setAdapter(new LugarAdapter(v.getContext(), datos));
             }
 
@@ -172,7 +206,7 @@ public class VesreservasFragment extends Fragment {
 
         Intent intento = new Intent();
         Bundle bundle = new Bundle();
-        bundle.putSerializable("LUGAR", lugares.get(position));
+        bundle.putSerializable("LUGAR", lugares.get(position).getLugar());
         FragmentManager fm = getFragmentManager();
         FragmentTransaction ft =  fm.beginTransaction();
         ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);

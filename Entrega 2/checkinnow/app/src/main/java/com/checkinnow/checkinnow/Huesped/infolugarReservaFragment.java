@@ -104,6 +104,7 @@ public class infolugarReservaFragment extends Fragment implements OnMapReadyCall
             lugar = (LugarClass) bundle.getSerializable("LUGAR");
             Log.i(TAG, lugar.toString());
             reserva = (Reserva) bundle.getSerializable("RESERVA");
+            reserva.setLugar(lugar);
             Log.i(TAG, reserva.toString());
 
         }
